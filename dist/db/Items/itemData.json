@@ -8,8 +8,8 @@
                 "description": "A rare and flawless 20-carat diamond, highly valuable and sought after by collectors and traders alike."
             }
         },
-        "fleaPriceRoubles": 12000000,
-        "handbookPriceRoubles": 12000000,
+        "fleaPriceRoubles": 16000000,
+        "handbookPriceRoubles": 16000000,
         "newItem": {
             "_id": "68c35c198b8b18c0c707ffa0",
             "_name": "tarkov_collectibles_diamond",
@@ -710,8 +710,8 @@
                 "description": "A bottle of sealed premium HOXXOH Gold Champagne."
             }
         },
-        "fleaPriceRoubles": 1500000,
-        "handbookPriceRoubles": 1500000,
+        "fleaPriceRoubles": 1250000,
+        "handbookPriceRoubles": 1250000,
         "newItem": {
             "_id": "68c35c198b8b18c0c707ffa9",
             "_name": "tarkov_collectibles_champagne",

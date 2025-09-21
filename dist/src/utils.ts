@@ -29,6 +29,7 @@ export function removeFromPMCLootPool(
 export function addtoStaticLoot(
     itemId: string,
     staticLootData: Record<string, Record<string, number>>,
+    staticLootMultiplier: number,
     database: ReturnType<DatabaseServer["getTables"]>,
     logger: ILogger
 ): void {
@@ -59,15 +60,16 @@ export function addtoStaticLoot(
                 logger.warning(`TotalRelativeProbability not found for Container ID ${containerID} in map ${mapName}`);
             } else {
                 // Convert spawnProbability (float) to relativeProbability (int)
-                const spawnProbability = mapLoot[containerName]
-                if (spawnProbability >= 1) {
-                    logger.warning(`Skipping item ${itemId} for container ${containerName} in map ${mapName} because spawnProbability=${spawnProbability} >= 1`);
+                let spawnProbability = mapLoot[containerName] * staticLootMultiplier
+                if (spawnProbability >= 0.25) {
+                    logger.warning(`Force spawnProbability=0.25 for item ${itemId} for container ${containerName} in map ${mapName} because spawnProbability=${spawnProbability} >= 0.25`);
+                    spawnProbability = 0.25
                     continue;
                 }
 
                 const relativeProbability = Math.round((spawnProbability * totalProbability) / (1 - spawnProbability));
                 if (relativeProbability <= 0) {
-                    logger.warning(`Skipping item ${itemId} for container ${containerName} in map ${mapName} because relativeProbability=${relativeProbability} <= 0 | spawnProbability=${spawnProbability} | totalProbability=${totalProbability}`);
+                    logger.warning(`Skipping item ${itemId} for container ${containerName} in map ${mapName} because relativeProbability=${relativeProbability} <= 0 | spawnProbability=${spawnProbability} | totalProbability=${totalProbability} | calculated relativeProbability before rounding: ${(spawnProbability * totalProbability) / (1 - spawnProbability)}`);
                     continue;
                 }
 

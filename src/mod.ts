@@ -23,6 +23,8 @@ class TarkovCollectibles implements IPostDBLoadMod
         const configServer = container.resolve<ConfigServer>("ConfigServer");
         const itemConfig : IItemConfig = configServer.getConfig(ConfigTypes.ITEM);
         const PMCConfig : IPmcConfig = configServer.getConfig(ConfigTypes.PMC);
+        const configFilePath = path.resolve(__dirname, "../config/config.json");
+        const config = JSON.parse(fs.readFileSync(configFilePath, "utf-8"));
         const itemIdLookupFilePath = path.resolve(__dirname, "../db/Items/itemIdLookup.json");
         const itemIdLookup: Record<string, string> = JSON.parse(fs.readFileSync(itemIdLookupFilePath, "utf-8"));
         const itemDataFilePath = path.resolve(__dirname, "../db/Items/itemData.json");
@@ -40,7 +42,7 @@ class TarkovCollectibles implements IPostDBLoadMod
             customItem.createItem(itemData[itemId]);
             removeFromRewardPool(itemId, itemConfig, logger)
             removeFromPMCLootPool(itemId, PMCConfig, logger)
-            addtoStaticLoot(itemId, staticLootData[itemId], database, logger);
+            addtoStaticLoot(itemId, staticLootData[itemId], config["staticLootMultiplier"], database, logger);
             addtoTraderTrades(itemId, traderData[itemId], database, logger);
             if (hallofFameData[itemId]["addtoHallofFame"]) {
                 addtoHallofFame(itemId, hallofFameData[itemId]["itemSize"], database, logger);
