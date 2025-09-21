@@ -61,12 +61,13 @@ export function addtoStaticLoot(
                 // Convert spawnProbability (float) to relativeProbability (int)
                 const spawnProbability = mapLoot[containerName]
                 if (spawnProbability >= 1) {
-                    logger.warning(`Skipping item ${itemId} for container ${containerName} in map ${mapName} because relativeProbability=${spawnProbability} >= 1`);
+                    logger.warning(`Skipping item ${itemId} for container ${containerName} in map ${mapName} because spawnProbability=${spawnProbability} >= 1`);
                     continue;
                 }
 
                 const relativeProbability = Math.round((spawnProbability * totalProbability) / (1 - spawnProbability));
                 if (relativeProbability <= 0) {
+                    logger.warning(`Skipping item ${itemId} for container ${containerName} in map ${mapName} because relativeProbability=${relativeProbability} <= 0 | spawnProbability=${spawnProbability} | totalProbability=${totalProbability}`);
                     continue;
                 }
 

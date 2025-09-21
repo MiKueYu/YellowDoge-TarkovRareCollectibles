@@ -476,8 +476,8 @@
                 "description": "A replica of a 18th century flintlock rifle, ornately finished, prized for its craftsmanship and provenance."
             }
         },
-        "fleaPriceRoubles": 1800000,
-        "handbookPriceRoubles": 1800000,
+        "fleaPriceRoubles": 2800000,
+        "handbookPriceRoubles": 2800000,
         "newItem": {
             "_id": "68c35c198b8b18c0c707ffa6",
             "_name": "tarkov_collectibles_flintlock",

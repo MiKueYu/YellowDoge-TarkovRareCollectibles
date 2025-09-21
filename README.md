@@ -8,26 +8,43 @@ Inspired by other extraction shooters like Arena Breakout: Infinite and Delta Fo
 
 ## Items and Spawn(Only in Containers)
 
-- 20-Carat Diamond: All Maps - Only found in Safes
+- 20-Carat Diamond: Most Maps (excluding Lighthouse/GroundZero/Woods) - Only found in Safes
+  0.001% in normal Safe 0.01% in Labs Safe and 0.025% in TerraGroup storage room Safe
 - 999.9 Gold Bar: All Maps - Only found in Safes
-- Gold Clock: All Maps - Drawer/SportBag/Tools/GroundCache/Suitcase
+  0.05% ~ 0.15% spawn chance in normal Safe and 0.3% in Labs and 0.5% TerraGroup storage room Safe
+- Gold Clock: All Maps - SportBag/Tools/GroundCache/Suitcase
+  0.001% ~ 0.05% spawn chance depending on container Higher chance in Plastic Suitcase
 - Gold Statue: All Maps - Drawer/SportBag/GroundCache/Suitcase
-- Pack of Weed: All Maps - Drawer/SportBag/Jacket/Medbag/GroundCache/DeadSCAV
+  0.001% ~ 0.05% spawn chance depending on container Higher chance in Plastic Suitcase
+- Pack of Weed: All Maps - Jacket/Medbag/GroundCache/DeadSCAV
+  0.1% ~ 0.2% spawn chance depending on container
 - Mona Lisa Replica: Custom/Interchange/GroundZero/Streets - SportBag/GroundCache/DeadSCAV/Suitcase
+  0.002% ~ 0.008% spawn chance depending on container Higher chance in Plastic Suitcase
 - Antique Flintlock Replica: Lighthouse/Shoreline/Streets/Woods - SportBag/WeaponCrate
+  0.001% ~ 0.005% spawn chance depending on container Higher chance in WeaponCrate
 - Military Recon Drone: Interchange/Lab/Lighthouse/Reserve - WeaponCrate
+  0.004% ~ 0.008% spawn chance depending on map Highest chance on Labs
 - Military Missile: Custom/Reserve/Shoreline/Woods - WeaponCrate
-- Premium Champagne: GroundZero - SportBag/Food/DeadSCAV/Suitcase
-- TerraGroup Labs Emergency Power Cell: Not Implemented Yet
-- Golden Deer Skull: Not Implemented Yet
+  0.004% ~ 0.008% spawn chance depending on map Highest chance on Reserve
+- Premium Champagne: GroundZero - SportBag/DeadSCAV/Suitcase
+  0.002% ~ 0.01% spawn chance depending on container Highest chance in Plastic Suitcase and Dead Civilian
+- TerraGroup Labs Emergency Power Cell: Does Not Spawn Yet
+- Golden Deer Skull: Does Not Spawn Yet
 
-Note: You can technically modify the spawn rates yourself in db/Items/StaticLootData.json following the staticLootTemplate.json, but no support is given to any modifications you make. DO THIS AT YOUR OWN RISK!
+Note: You can technically modify the spawn rates (or add the last 2 items to spawn) yourself in db/Items/StaticLootData.json following the staticLootTemplate.json, but no support is given for any modifications you make. DO THIS AT YOUR OWN RISK!
 
 ---
 
 ## Installation
 
 1. Extract user/ folder to SPT root directory
+
+---
+
+## TODO (Once I figure out how to)
+
+1. Add Loose Loot Spawns (Power Cell/Deer Skull will be Loose Loot only probably)
+2. Add New Items (If I find any model that fit this mod's goal)
 
 ---
 

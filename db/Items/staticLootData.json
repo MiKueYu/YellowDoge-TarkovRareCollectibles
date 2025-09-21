@@ -4,30 +4,21 @@
             "Safe": 0.00001
         },
         "factory4_day": {
-            "SafeBank_terra": 0.0001
+            "SafeBank_terra": 0.00025
         },
         "factory4_night": {
-            "SafeBank_terra": 0.0001
+            "SafeBank_terra": 0.00025
         },
         "laboratory": {
             "Safe": 0.0001
         },
-        "lighthouse": {
-            "Safe": 0.00001
-        },
         "rezervbase": {
-            "Safe": 0.00001
-        },
-        "sandbox_high": {
             "Safe": 0.00001
         },
         "shoreline": {
             "Safe": 0.00001
         },
         "tarkovstreets": {
-            "Safe": 0.00001
-        },
-        "woods": {
             "Safe": 0.00001
         }
     },
@@ -36,124 +27,113 @@
             "Safe": 0.0005
         },
         "factory4_day": {
-            "Safe": 0.0005
+            "Safe": 0.0005,
+            "SafeBank_terra": 0.005
         },
         "factory4_night": {
-            "Safe": 0.0005
+            "Safe": 0.0005,
+            "SafeBank_terra": 0.005
         },
         "laboratory": {
-            "Safe": 0.001
+            "Safe": 0.003
         },
         "lighthouse": {
-            "Safe": 0.0005
+            "Safe": 0.002
         },
         "rezervbase": {
-            "Safe": 0.0005
+            "Safe": 0.001
         },
         "sandbox": {
-            "Safe": 0.0001
+            "Safe": 0.0005
         },
         "sandbox_high": {
-            "Safe": 0.0005
+            "Safe": 0.001
         },
         "shoreline": {
-            "Safe": 0.0005
+            "Safe": 0.0008
         },
         "tarkovstreets": {
-            "Safe": 0.0005
+            "Safe": 0.001
         },
         "woods": {
-            "Safe": 0.0005
+            "Safe": 0.0015
         }
     },
     "68c35c198b8b18c0c707ffa2": {
         "bigmap": {
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "tools&other": 0.00005,
-            "wood_cache": 0.0001,
-            "barrel_cache": 0.0001
+            "ToolBox": 0.00003,
+            "tools&other": 0.0003,
+            "wood_cache": 0.00003,
+            "barrel_cache": 0.00003
         },
         "factory4_day": {
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "tools&other": 0.00005
+            "ToolBox": 0.00003,
+            "tools&other": 0.0003
         },
         "factory4_night": {
-            "Drawer": 0.00005,
-            "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "tools&other": 0.00005
+            "ToolBox": 0.0001,
+            "tools&other": 0.0003
         },
         "interchange": {
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "wood_cache": 0.0001,
-            "barrel_cache": 0.0001,
+            "ToolBox": 0.00003,
+            "wood_cache": 0.00003,
+            "barrel_cache": 0.00003,
             "suitcase_plastic_lootable": 0.0005
         },
         "laboratory": {
             "Safe": 0.005,
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
+            "ToolBox": 0.00003,
             "suitcase_plastic_lootable": 0.0005
         },
         "lighthouse": {
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "tools&other": 0.00005,
-            "wood_cache": 0.0001,
-            "barrel_cache": 0.0001,
+            "ToolBox": 0.00003,
+            "tools&other": 0.0003,
+            "wood_cache": 0.00003,
+            "barrel_cache": 0.00003,
             "suitcase_plastic_lootable": 0.0005
         },
         "rezervbase": {
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "tools&other": 0.00005
+            "ToolBox": 0.00003,
+            "tools&other": 0.0003
         },
         "sandbox": {
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "tools&other": 0.00005,
+            "ToolBox": 0.00003,
+            "tools&other": 0.0003,
             "suitcase_plastic_lootable": 0.0005
         },
         "sandbox_high": {
-            "Drawer": 0.00005,
-            "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "tools&other": 0.00005,
+            "SportBag": 0.00005,
+            "ToolBox": 0.00005,
+            "tools&other": 0.0003,
             "suitcase_plastic_lootable": 0.0005
         },
         "shoreline": {
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "wood_cache": 0.0001,
-            "barrel_cache": 0.0001,
+            "ToolBox": 0.00003,
+            "wood_cache": 0.00003,
+            "barrel_cache": 0.00003,
             "suitcase_plastic_lootable": 0.0005
         },
         "tarkovstreets": {
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "tools&other": 0.00005,
-            "barrel_cache": 0.0001,
+            "ToolBox": 0.00003,
+            "tools&other": 0.0003,
+            "barrel_cache": 0.00003,
             "suitcase_plastic_lootable": 0.0005
         },
         "woods": {
-            "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "ToolBox": 0.00001,
-            "tools&other": 0.00005,
-            "wood_cache": 0.0001,
-            "barrel_cache": 0.0001
+            "ToolBox": 0.00003,
+            "tools&other": 0.0003,
+            "wood_cache": 0.00003,
+            "barrel_cache": 0.00003
         }
     },
     "68c35c198b8b18c0c707ffa3": {
@@ -168,28 +148,28 @@
             "SportBag": 0.00001
         },
         "factory4_night": {
-            "Drawer": 0.00005,
-            "SportBag": 0.00001
+            "Drawer": 0.0002,
+            "SportBag": 0.0001
         },
         "interchange": {
             "Drawer": 0.00005,
             "SportBag": 0.00001,
             "wood_cache": 0.0001,
             "barrel_cache": 0.0001,
-            "suitcase_plastic_lootable": 0.0008
+            "suitcase_plastic_lootable": 0.0005
         },
         "laboratory": {
             "Safe": 0.005,
             "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "suitcase_plastic_lootable": 0.0008
+            "suitcase_plastic_lootable": 0.0005
         },
         "lighthouse": {
             "Drawer": 0.00005,
             "SportBag": 0.00001,
             "wood_cache": 0.0001,
             "barrel_cache": 0.0001,
-            "suitcase_plastic_lootable": 0.0008
+            "suitcase_plastic_lootable": 0.0005
         },
         "rezervbase": {
             "Drawer": 0.00005,
@@ -198,25 +178,25 @@
         "sandbox": {
             "Drawer": 0.00005,
             "SportBag": 0.00001,
-            "suitcase_plastic_lootable": 0.0008
+            "suitcase_plastic_lootable": 0.0005
         },
         "sandbox_high": {
             "Drawer": 0.00005,
-            "SportBag": 0.00001,
-            "suitcase_plastic_lootable": 0.0008
+            "SportBag": 0.00005,
+            "suitcase_plastic_lootable": 0.0005
         },
         "shoreline": {
             "Drawer": 0.00005,
             "SportBag": 0.00001,
             "wood_cache": 0.0001,
             "barrel_cache": 0.0001,
-            "suitcase_plastic_lootable": 0.0008
+            "suitcase_plastic_lootable": 0.0005
         },
         "tarkovstreets": {
             "Drawer": 0.00005,
             "SportBag": 0.00001,
             "barrel_cache": 0.0001,
-            "suitcase_plastic_lootable": 0.0008
+            "suitcase_plastic_lootable": 0.0005
         },
         "woods": {
             "Drawer": 0.00005,
@@ -227,140 +207,115 @@
     },
     "68c35c198b8b18c0c707ffa4": {
         "bigmap": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "MedBox": 0.0003,
-            "PMC_dead": 0.00005,
-            "SportBag": 0.00001,
-            "barrel_cache": 0.0001,
-            "scavDead": 0.00005,
-            "wood_cache": 0.0001
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "MedBox": 0.0015,
+            "PMC_dead": 0.002,
+            "barrel_cache": 0.001,
+            "scavDead": 0.002,
+            "wood_cache": 0.001
         },
         "factory4_day": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "PMC_dead": 0.00005,
-            "SportBag": 0.00001,
-            "scavDead": 0.00005
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "PMC_dead": 0.002,
+            "scavDead": 0.002
         },
         "factory4_night": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "PMC_dead": 0.00005,
-            "SportBag": 0.00001,
-            "scavDead": 0.00005
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "PMC_dead": 0.002,
+            "scavDead": 0.002
         },
         "interchange": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "MedBox": 0.0003,
-            "SportBag": 0.00001,
-            "barrel_cache": 0.0001,
-            "scavDead": 0.00005,
-            "wood_cache": 0.0001
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "MedBox": 0.0015,
+            "barrel_cache": 0.001,
+            "scavDead": 0.002,
+            "wood_cache": 0.001
         },
         "laboratory": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "MedBox": 0.0003,
-            "PMC_dead": 0.00005,
-            "SportBag": 0.00001
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "MedBox": 0.0015,
+            "PMC_dead": 0.002
         },
         "lighthouse": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "MedBag_adv": 0.0006,
-            "MedBox": 0.0003,
-            "SportBag": 0.00001,
-            "SportBag_adv": 0.0001,
-            "barrel_cache": 0.0001,
-            "scavDead": 0.00005,
-            "wood_cache": 0.0001
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "MedBag_adv": 0.0015,
+            "MedBox": 0.0015,
+            "barrel_cache": 0.001,
+            "scavDead": 0.002,
+            "wood_cache": 0.001
         },
         "rezervbase": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "MedBox": 0.0003,
-            "SportBag": 0.00001,
-            "scavDead": 0.00005
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "MedBox": 0.0015,
+            "scavDead": 0.002
         },
         "sandbox": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "MedBox": 0.0003,
-            "PMC_dead": 0.00005,
-            "SportBag": 0.00001,
-            "scavDead": 0.00005
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "MedBox": 0.0015,
+            "PMC_dead": 0.002,
+            "scavDead": 0.002
         },
         "sandbox_high": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "MedBox": 0.0003,
-            "PMC_dead": 0.00005,
-            "SportBag": 0.00001,
-            "scavDead": 0.00005
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "MedBox": 0.0015,
+            "PMC_dead": 0.002,
+            "scavDead": 0.002
         },
         "shoreline": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "MedBox": 0.0003,
-            "SportBag": 0.00001,
-            "barrel_cache": 0.0001,
-            "scavDead": 0.00005,
-            "wood_cache": 0.0001
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "MedBox": 0.0015,
+            "barrel_cache": 0.001,
+            "scavDead": 0.002,
+            "wood_cache": 0.001
         },
         "tarkovstreets": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "MedBox": 0.0003,
-            "SportBag": 0.00001,
-            "barrel_cache": 0.0001,
-            "scavDead": 0.00005
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "MedBox": 0.0015,
+            "barrel_cache": 0.001,
+            "scavDead": 0.002
         },
         "woods": {
-            "Drawer": 0.00001,
-            "Jacket": 0.0008,
-            "MedBag": 0.0006,
-            "PMC_dead": 0.00005,
-            "SportBag": 0.00001,
-            "barrel_cache": 0.0001,
-            "scavDead": 0.00005,
-            "wood_cache": 0.0001
+            "Jacket": 0.002,
+            "MedBag": 0.0015,
+            "PMC_dead": 0.002,
+            "barrel_cache": 0.001,
+            "scavDead": 0.002,
+            "wood_cache": 0.001
         }
     },
     "68c35c198b8b18c0c707ffa5": {
         "bigmap": {
             "SportBag": 0.00002,
-            "wood_cache": 0.0006,
-            "scavDead": 0.0004
+            "wood_cache": 0.00006,
+            "scavDead": 0.00004
         },
         "interchange": {
             "SportBag": 0.00002,
-            "wood_cache": 0.0006,
-            "scavDead": 0.0004,
+            "wood_cache": 0.00006,
+            "scavDead": 0.00004,
             "suitcase_plastic_lootable": 0.0008
         },
         "sandbox_high": {
-            "PMC_dead": 0.0004,
-            "SportBag": 0.00002,
-            "dead_civilian": 0.0004,
-            "scavDead": 0.0004,
+            "PMC_dead": 0.00004,
+            "SportBag": 0.00004,
+            "dead_civilian": 0.00004,
+            "scavDead": 0.00004,
             "suitcase_plastic_lootable": 0.0008
         },
         "tarkovstreets": {
             "SportBag": 0.00002,
-            "scavDead": 0.0004,
+            "scavDead": 0.00004,
             "suitcase_plastic_lootable": 0.0008
         }
     },
@@ -459,20 +414,18 @@
     },
     "68c35c198b8b18c0c707ffa9": {
         "sandbox": {
-            "Food&Stuff": 0.00003,
             "PMC_dead": 0.00001,
             "SportBag": 0.00003,
             "dead_civilian": 0.00005,
             "scavDead": 0.00001,
-            "suitcase_plastic_lootable": 0.00005
+            "suitcase_plastic_lootable": 0.00008
         },
         "sandbox_high": {
-            "Food&Stuff": 0.00006,
             "PMC_dead": 0.00002,
             "SportBag": 0.00006,
             "dead_civilian": 0.0001,
             "scavDead": 0.00002,
-            "suitcase_plastic_lootable": 0.0001
+            "suitcase_plastic_lootable": 0.00016
         }
     },
     "68c35c198b8b18c0c707ffaa": {},
