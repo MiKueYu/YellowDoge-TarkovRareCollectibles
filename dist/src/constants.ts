@@ -348,3 +348,32 @@ export const totalRelativeProbability: Record<string, Record<string, number>> = 
         "wood_cache": 212441
     }
 };
+
+export const looseLootTemplate = {
+    template: {
+        IsContainer: false,
+        useGravity: true,
+        randomRotation: true,
+        Rotation: { x: 0, y: 0, z: 0 },
+        IsGroupPosition: false,
+        GroupPositions: [],
+        IsAlwaysSpawn: false,
+        Root: "",
+        Items: [
+            {
+                "_id": "1234567890",
+                "upd": {
+                    "StackObjectsCount": 1
+                }
+            }
+        ]
+    },
+    itemDistribution: [
+        {
+            "composedKey": {
+                "key": "1234567890"
+            },
+            "relativeProbability": 4
+        }
+    ]
+}

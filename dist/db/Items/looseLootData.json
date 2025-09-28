@@ -1,0 +1,254 @@
+{
+    "68c35c198b8b18c0c707ffa0": {},
+    "68c35c198b8b18c0c707ffa1": {},
+    "68c35c198b8b18c0c707ffa2": {},
+    "68c35c198b8b18c0c707ffa3": {},
+    "68c35c198b8b18c0c707ffa4": {
+        "lighthouse": [
+            {
+                "Id": "tarkov_collectibles_weed_spawn_0",
+                "Position": { "x": -123.44, "y": 11.57, "z": -841.1 },
+                "probability": 0.009
+            },
+            {
+                "Id": "tarkov_collectibles_weed_spawn_1",
+                "Position": { "x": -113.60, "y": 11.55, "z": -844.07 },
+                "probability": 0.009
+            }
+        ],
+        "tarkovstreets": [
+            {
+                "Id": "tarkov_collectibles_weed_spawn_2",
+                "Position": { "x": -123.44, "y": 11.57, "z": -841.1 },
+                "probability": 0.0095
+            },
+            {
+                "Id": "tarkov_collectibles_weed_spawn_3",
+                "Position": { "x": -113.60, "y": 11.55, "z": -844.07 },
+                "probability": 0.0095
+            }
+        ]
+    },
+    "68c35c198b8b18c0c707ffa5": {},
+    "68c35c198b8b18c0c707ffa6": {},
+    "68c35c198b8b18c0c707ffa7": {
+        "interchange": [
+            {
+                "Id": "tarkov_collectibles_drone_spawn_0",
+                "Position": { "x": -17.00, "y": 28.42, "z": -302.50 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_drone_spawn_1",
+                "Position": { "x": -12.20, "y": 27.76, "z": -69.05 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_drone_spawn_2",
+                "Position": { "x": 23.40, "y": 27.38, "z": 23.15 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_drone_spawn_3",
+                "Position": { "x": 69.10, "y": 28.65, "z": 48.53 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_drone_spawn_4",
+                "Position": { "x": 44.69, "y": 27.38, "z": 144.14 },
+                "probability": 0.008
+            }
+        ],
+        "laboratory":[
+            {
+                "Id": "tarkov_collectibles_drone_spawn_5",
+                "Position": { "x": -164.36, "y": 1.29, "z": -322.45 },
+                "probability": 0.007
+            },
+            {
+                "Id": "tarkov_collectibles_drone_spawn_6",
+                "Position": { "x": -250.32, "y": 4.25, "z": -326.10 },
+                "probability": 0.007
+            },
+            {
+                "Id": "tarkov_collectibles_drone_spawn_7",
+                "Position": { "x": -268.70, "y": 4.25, "z": -319.90 },
+                "probability": 0.007
+            },
+            {
+                "Id": "tarkov_collectibles_drone_spawn_8",
+                "Position": { "x": -169.55, "y": 5.28, "z": -281.46 },
+                "probability": 0.007
+            }
+        ]
+    },
+    "68c35c198b8b18c0c707ffa8": {},
+    "68c35c198b8b18c0c707ffa9": {
+        "sandbox": [
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_0",
+                "Position": { "x": 123.34, "y": 29.097, "z": 279.47 },
+                "probability": 0.005
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_1",
+                "Position": { "x": 115.33, "y": 25.541, "z": 150.31 },
+                "probability": 0.005
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_2",
+                "Position": { "x": -15.53, "y": 30.942, "z": 66.69 },
+                "probability": 0.005
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_3",
+                "Position": { "x": 125.23, "y": 23.88, "z": 29.25 },
+                "probability": 0.005
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_4",
+                "Position": { "x": 130.28, "y": 24.67, "z": 22.26 },
+                "probability": 0.005
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_5",
+                "Position": { "x": 111.79, "y": 24.36, "z": 29.39 },
+                "probability": 0.005
+            }
+        ],
+        "sandbox_high": [
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_0",
+                "Position": { "x": 123.34, "y": 29.097, "z": 279.47 },
+                "probability": 0.011
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_1",
+                "Position": { "x": 115.33, "y": 25.541, "z": 150.31 },
+                "probability": 0.011
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_2",
+                "Position": { "x": -15.53, "y": 30.942, "z": 66.69 },
+                "probability": 0.011
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_3",
+                "Position": { "x": 125.23, "y": 23.88, "z": 29.25 },
+                "probability": 0.011
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_4",
+                "Position": { "x": 130.28, "y": 24.67, "z": 22.26 },
+                "probability": 0.011
+            },
+            {
+                "Id": "tarkov_collectibles_champagne_spawn_5",
+                "Position": { "x": 111.79, "y": 24.36, "z": 29.39 },
+                "probability": 0.011
+            }
+        ]
+    },
+    "68c35c198b8b18c0c707ffaa": {
+        "laboratory":[
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_0",
+                "Position": { "x": -123.65, "y": 4.25, "z": -281.00 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_1",
+                "Position": { "x": -113.03, "y": 0.25, "z": -433.76 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_2",
+                "Position": { "x": -214.80, "y": 4.25, "z": -381.44 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_3",
+                "Position": { "x": -186.75, "y": 0.25, "z": -329.75 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_4",
+                "Position": { "x": -161.28, "y": 4.25, "z": -346.40 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_5",
+                "Position": { "x": -251.30, "y": -2.65, "z": -371.12 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_6",
+                "Position": { "x": -262.15, "y": -3.90, "z": -339.35 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_7",
+                "Position": { "x": -240.80, "y": -3.90, "z": -298.92 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_8",
+                "Position": { "x": -188.92, "y": -3.90, "z": -327.54 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_9",
+                "Position": { "x": -228.70, "y": -3.90, "z": -391.81 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_10",
+                "Position": { "x": -124.88, "y": -3.90, "z": -311.91 },
+                "probability": 0.008
+            },
+            {
+                "Id": "tarkov_collectibles_power_cell_spawn_11",
+                "Position": { "x": -136.55, "y": -7.02, "z": -363.67 },
+                "probability": 0.008
+            }
+        ]
+    },
+    "68c35c198b8b18c0c707ffab": {
+        "bigmap":[
+            {
+                "Id": "tarkov_collectibles_gold_deer_skull_spawn_0",
+                "Position": { "x": 184.16, "y": 6.35, "z": 183.34 },
+                "probability": 0.016
+            }
+        ],
+        "tarkovstreets":[
+            {
+                "Id": "tarkov_collectibles_gold_deer_skull_spawn_1",
+                "Position": { "x": 188.80, "y": 0.25, "z": 225.89 },
+                "probability": 0.0095
+            },
+            {
+                "Id": "tarkov_collectibles_gold_deer_skull_spawn_2",
+                "Position": { "x": -130.95, "y": 9.10, "z": 270.00 },
+                "probability": 0.0095
+            }
+        ],
+        "rezervbase":[
+            {
+                "Id": "tarkov_collectibles_gold_deer_skull_spawn_3",
+                "Position": { "x": 191.80, "y": -5.86, "z": -224.98 },
+                "probability": 0.0095
+            },
+            {
+                "Id": "tarkov_collectibles_gold_deer_skull_spawn_4",
+                "Position": { "x": -152.64, "y": -8.22, "z": 73.24 },
+                "probability": 0.0095
+            },
+            {
+                "Id": "tarkov_collectibles_gold_deer_skull_spawn_5",
+                "Position": { "x": -122.33, "y": -14.40, "z": 27.90 },
+                "probability": 0.0095
+            }
+        ]
+    }
+}

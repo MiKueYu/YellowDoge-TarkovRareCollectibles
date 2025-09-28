@@ -1,3 +1,4 @@
 {
-    "staticLootMultiplier": 1
+    "staticLootMultiplier": 1,
+    "looseLootMultiplier": 1
 }
