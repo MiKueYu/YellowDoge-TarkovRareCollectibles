@@ -1,18 +1,6 @@
-# YellowDoge-TarkovRareCollectibles
-
 Do you remember the feeling of finding your first GPU? Do you still remember the excitement of discovering your first LEDX? Don't you feel that looting in Tarkov nowadays has become a lot more boring? Only marked keys, Lab key cards, and maybe LEDX still give you enough adrenaline. This mod aims to fix that.
 
 Inspired by other extraction shooters like Arena Breakout: Infinite and Delta Force, **Tarkov Rare Collectibles** is a mod that adds rare collectible items to Escape from Tarkov. These items are highly valuable and extremely rare, often worth over 1 million rubles. Once you find them, you can sell them for a fortune or collect them in your Hall of Fame.
-
----
-
-## TODO (Once I figure out how to)
-
-1. Add Loose Loot Spawns (Power Cell/Deer Skull will be Loose Loot only probably)
-2. Add Quests
-3. Rebalance Container Loot Spawn per Quest/Lore
-4. Add to Handbook, new category maybe
-5. Add New Items (If I find any model that fit this mod's goal)
 
 ---
 
@@ -22,105 +10,210 @@ Inspired by other extraction shooters like Arena Breakout: Infinite and Delta Fo
 
 ---
 
-## Lore & Spawn Location Hint
+## Item Spawn Tabset {.tabset}
 
-### 20-Carat Diamond
-Fence: Listen, mercenery — you might be good at collecting those items, but there's a very rare gem that you've never seen before. My sources say a very rich merchant left his precious jewel in a safe when he escaped this place. Of course he's hiring people to look for it, but you — if you're lucky enough — might find it first. And let me tell you, there's a big paycheck for anyone who brings me the stone. I'll be waiting for your good news.
+### Adjust Loot Spawn Modifier
 
-### 999.9 Gold Bar / Gold Clock / Gold Statue
-Skier: Usually people don't care much about gold nowadays, but that's because they don't have a way to use it. I, on the other hand, have my ways to send goods to the outside world. So if you come across any gold bars, gold decorations, or anything made of pure gold, remember to come see me. I will make it worth your time. However, don't pester me with those fake gold statues that have only a thin layer of gold — those are not worth my time. Bring me only pure gold.
+1. Open user/mods/yellowdoge-tarkovrarecollectibles/config/config.json
 
-Peacekeeper: Peace is not cheap. My people are risking their lives to make this world a better place, yet money is always tight. And that's where you come in. I've got connections that will take some valuables for a good price — why don't you check those safes and see if there are any shiny bars lying around? I'll give you a decent cut; you won't regret it.
+2. Adjust "staticLootMultiplier" to multiply the spawn rate for containers (value must be a number, or it will break the code). Adjust  "looseLootMultiplier" to multiply the spawn rate for items outside of containers.
 
-Prepor: I remember the days when I had a decent setup. Nowadays even my clock doesn't tick on time anymore. You know what — I heard there are rich people who put gold on their clocks. Do you know how much that costs? Well I do, since somebody's looking for one, with a big prize for the first to bring it. If you find that gold clock, bring it to me and I'll let him know you found it.
+3. The final spawn rate is calculated as "defaultSpawnRate" x "LootMultiplier". The defaultSpawnRate can be found on the other tabs.
 
-Ragman: Remember the guy who asked for those luxury items last time? Well, he got bored of those and now he wants a fully gold statue. You know, one that's basically solid gold, not the fake ones with just a gold layer on the outside. Anyway, you seem to know where to find that kind of stuff, so I trust you'll bring me one soon. I'll have your share prepared in advance.
+4. Details on Item Spawn:
+  - **Spawn Rate**: contains textual descriptions of where each item spawns
+  - **Loose Loot Spawn Locations**: contains textual descriptions of each map's loose loot spawns
+  - **Loose Loot Spawn Locations (Spoilers)**: contains images of each spawn point for loose loot spawns
 
-### Pack of Weed
-Therapist: I knew I could count on you, mercenary. The drug labs you found last time have been operating for a while now — I heard they have stashes all over the region. I have a request: can you please find some of those for me? Not only will we be able to disrupt their operations, those drugs, while dangerous, can also be useful to me. I know a thing or two and those ingredients can be turned into much-needed painkillers for my patients. Not the best quality, but what can you ask for in these harsh times?
+### Spawn Rate
 
-Skier: I heard you're working with that doctor again. Now listen, there's a lot of opportunity in those goods — why don't you hand them to me and I'll make sure they get sold to the highest bidder. Do you really believe she's going to use those to save lives? It's all business, I'm telling you. You've been my business partner — why would I disappoint you?
+Static Loot spawn chance is per item spawned in each container
 
-### Mona Lisa Replica
-Ragman: So look — apparently our big customer is no longer satisfied with just fine metals. He's looking for an art piece now. Of course it's not the real one, but apparently it's a replica made by some other famous artist. We believe the previous owner hid the piece in an underground cache. You should probably look for those.
+#### 20-Carat Diamond:
+- 0.05% ~ 0.3% spawn chance in Safes (3% in TerraGroup storage room Safe)
+- LooseLoot: very rare on Labs Valuable spawn point
+#### 999.9 Gold Bar:
+- 0.8% ~ 5% spawn chance in Safes (7.5% in TerraGroup storage room Safe)
+- LooseLoot: spawns on various map's Valuable spawn point
+#### Gold Clock:
+- 0.08% ~ 0.1% spawn chance in Sportbag, Toolbox, Technical supply crate, GroundCache, Suitcase on All maps
+- LooseLoot: spawns on various map's Valuable spawn point
+#### Gold Statue:
+- 0.08% ~ 0.1% spawn chance in Sportbag, Jacket, GroundCache, Suitcase on All maps
+- LooseLoot: spawns on various map's Valuable spawn point
+#### Pack of Weed:
+- 0.2% ~ 1% spawn chance in Medbag, Jacket, GroundCache, Dead NPC on All maps
+- LooseLoot: spawns in the drug lab on Lighthouse and Streets
+#### Mona Lisa Replica:
+- 2.5% spawn chance in GroundCache on All maps that has GroundCache
+- LooseLoot: spawns in Tarcone director's office, Beluga restaurant office, "Dostoevski" restaurant, Pikes Peak resort
+#### Antique Flintlock Replica:
+- 0.5% spawn chance in Weapon Crates on Customs/Interchange/Lighthouse/Shoreline/Streets/Woods
+- LooseLoot: spawns on various map's Valuable spawn point
+#### Military Recon Drone:
+- 0.5% ~ 0.8% spawn chance in all wooden supply crate on Customs/Lighthouse/Reserve/Shoreline/Woods
+- LooseLoot: spawns on various map's Military spawn point
+#### Military Missile:
+- 0.2% ~ 0.8% spawn chance in Weapon Crates on Customs/Labs/Lighthouse/Reserve/Woods
+- LooseLoot: spawns on various map's Military spawn point
+#### Premium Champagne:
+- 0.05% ~ 1% spawn chance in Sportbag, Dead NPC, Suitcase on GroundZero
+- LooseLoot: 6 spawns on GroundZero (3 in the winery) and small chance on Labs and Streets' Valuable spawn point
+#### TerraGroup Labs Emergency Power Cell:
+- LooseLoot: ONLY spawns as loose loot in Labs (most spawn points are in the Technical Level)
+#### Golden Deer Skull:
+- LooseLoot: ONLY spawns in cultist circles (low chance on exposed ones, higher chance in marked rooms)
+#### Gold Lion Figurine:
+- 0.2% ~ 1.25% spawn chance in Safes (5% in TerraGroup storage room Safe)
+- LooseLoot: spawns on various map's Valuable spawn point
+#### Antique Gramophone:
+- 0.08% ~ 0.1% spawn chance in Sportbag, Drawer, GroundCache, Suitcase on All maps
+- LooseLoot: spawns on various map's Valuable spawn point
+#### Dragon Figurine:
+- 0.08% ~ 0.1% spawn chance in Sportbag, Drawer, GroundCache, Suitcase on All maps
+- LooseLoot: spawns on various map's Valuable spawn point
 
-### Antique Flintlock Replica
-Jaeger: You have proven yourself to be a good sniper, and a good sniper must have a good weapon. There's a guy I know who's looking for a trophy to celebrate his hunts, but not an ordinary trophy. I've heard the museum in the city once had an exhibition with an antique flintlock. Maybe you can get that for him — he's willing to pay a lot. I'm not sure if the weapon is still there; maybe someone took it, or maybe it ended up in a weapon box, since it's a gun, you know.
+### Loose Loot Spawn Locations
 
-### Military Recon Drone
-Peacekeeper: We've lost our drones and you helped us recover the remains. However, that still doesn't mean we have a reliable way for recon. I think you're capable enough to help again, won't you? There are some smaller drones lying around, probably in wooden boxes. They can't spot from very far, but at least they can fly. For the time being, these will have to do.
+Loose Loot spawn chance is per spawn point per raid
 
-Mechanic: Remember all those cameras I had you plant for me? They were really useful, but lacking in one department: they're fixed and can only surveil one area. There's a solution to that. I need you to bring me a drone — apparently there are a few either in the military or in the big shopping mall.
+#### Customs
+- 4% ~ 5% Missile/Drone spawns in the 2 USEC stash and fortress
+- 4% Monalisa spawns in Tarcone director's office
+- 8% Valuable (GoldStatue/Flintlock/Gramophone/WoodDragon) spawns in Tarcone director's office and gas station office
+- 8% Gold Deer Skull spawns in market room
 
-### Military Missile
-Prapor: You're good at sneaking in military material, soldier. However, I've got a much harder task this time. It's highly classified material again — some military missiles, far more powerful than those old shells you found last time, but also probably much harder to find. I recommend checking the military base again. Relax, you're used to that place.
+#### Woods
+- 5% Missile/Drone spawns in the military camp and USEC camp
+- 7% Valuable (GoldStatue/Flintlock/Gramophone/WoodDragon) spawns in SCAV camps and sniper mountain bunker
+- 1% Gold Deer Skull spawns in 2 cultist circles and the new bunker cultist circle
 
-Peacekeeper: I heard you're looking for some highly dangerous military weapons. Normally I would suggest you stop, but this time the situation is different. I have a contact who would like to poke around something like that, and he's well connected with deep pockets. Maybe if you bring me what he's looking for, we can both benefit.
+#### Interchange
+- 10% Drone spawns on the shelf in OLI and IDEA as well as Tech Shops
 
-### Premium Champagne
-Prapor: Good job bringing me that wine last time. You work hard and didn't try to fool me, so I'll let you in on a little secret. That liquor store in the city center — you remember that one? — actually has some top-tier stuff. If you look around again, you might find a bottle of HOXXOH champagne. If you don't find it there, somebody probably hid it in the city. In any case, you should be able to find it in the city center. If you do, I'll pay you well.
+#### Reserve
+- 10% Missile spawns in the helicopter, inside locked room in garage, on top of train station, and next to the armored vehicle outside E1/E2 bunkers
+- 5% Gold Deer Skull spawns in market rooms
 
-### TerraGroup Labs Emergency Power Cell
-Mechanic: Have you been to the TerraGroup laboratory? Apparently they have secret tech to power their facilities. If you can find one for me, it would power my workshop for a very long time. I'm willing to write you the biggest check you've ever seen if you can bring one.
+#### Shoreline
+- 8% Valuable (GoldBar/GoldClock/GoldStatue/GoldLion) spawns in resort admin and gas station
+- 6% Valuable (GoldStatue/Flintlock/Gramophone/WoodDragon) spawns in unlocked cottage, weather station and cabin near car extract
+- 1% Gold Deer Skull spawns in 2 cultist circles
 
-### Gold Deer Skull
-Fence: So you've already encountered those hooded people, haven't you? They might be weird, but they've also got some of the rarest stuff out there. I heard they have a big, heavy gold statue they use during their rituals. Maybe you can track that down. This type of stuff goes for a lot on the market, and I'll make sure you get your cut.
+#### Lighthouse
+- 20% Weed spawns in drug lab
+- 4% Champagne spawns in Pikes Peak resort wine locker
+- 3% Monalisa spawns on Pikes Peak resort bedroom table
+- 8% Valuable (GoldBar/GoldClock/Gramophone/WoodDragon) spawns in room opposite to Pikes Peak resort and grand chalet billards room
+- 5% Missile/Drone spawns in grand chalet and the Rogue camp tents
+- 3% Gold Deer Skull spawns marked room
 
-## Items and Spawn(OUTDATED)
-- 20-Carat Diamond: Most Maps (excluding Lighthouse/GroundZero/Woods) - Only found in Safes
-  0.004% ~ 0.05% spawn chance in Safe
-  Highest chance in TerraGroup storage room Safe and Labs Safe
-- 999.9 Gold Bar: All Maps - Only found in Safes
-  0.1% ~ 1% spawn chance in normal Safe
-  Highest chance in TerraGroup storage room Safe (5%)
-- Gold Clock: All Maps - SportBag/Tools/GroundCache/Suitcase
-  0.005% ~ 0.5% spawn chance depending on the container
-  Higher chance on Lighthouse/Shoreline/GroundZero/Streets
-- Gold Statue: All Maps - Drawer/SportBag/GroundCache/Suitcase
-  0.005% ~ 0.5% spawn chance depending on the container
-  Higher chance on Customs/Interchange/Labs/Reserve/Woods
-- Pack of Weed: All Maps - Jacket/Medbag/GroundCache/DeadSCAV
-  0.1% ~ 1% spawn chance depending on the container
-  Higher chance on Customs/Lighthouse/Streets
-- Mona Lisa Replica: Customs/Interchange/GroundZero/Streets - SportBag/GroundCache/DeadSCAV/Suitcase
-  0.02% ~ 0.08% spawn chance depending on the container
-  Higher chance in Plastic Suitcase
-- Antique Flintlock Replica: Lighthouse/Shoreline/Streets/Woods - SportBag/WeaponCrate
-  0.01% ~ 0.05% spawn chance depending on the container
-  Higher chance in WeaponCrate
-- Military Recon Drone: Interchange/Labs/Lighthouse/Reserve - WeaponCrate
-  0.04% ~ 0.08% spawn chance depending on the map
-  Highest chance on Labs
-- Military Missile: Customs/Reserve/Shoreline/Woods - WeaponCrate
-  0.04% ~ 0.08% spawn chance depending on the map
-  Highest chance on Reserve
-- Premium Champagne: GroundZero - SportBag/DeadSCAV/Suitcase
-  0.05% ~ 1% spawn chance depending on the container
-  Highest chance in Plastic Suitcase and Dead Civilian
-- TerraGroup Labs Emergency Power Cell: Labs - SportBag/WeaponCrate/Suitcase
-  0.05% ~ 0.5% spawn chance depending on the container
-  Highest chance in Plastic Suitcase
-- Golden Deer Skull: Does Not Spawn Yet
+#### Labs
+- 3% Drone spawns various places
+- 8% Power Cell spawns various places (mostly in the Technical level)
+- 10% Valuable (ALL valuables are possible including the diamond) spawns various places
 
-Note: You can technically modify the spawn rates (or add the last 2 items to spawn) yourself in db/Items/StaticLootData.json following the staticLootTemplate.json, but no support is given for any modifications you make. DO THIS AT YOUR OWN RISK!
+#### Streets
+- 20% Weed spawns in drug lab
+- 4% Monalisa spawns in Beluga restaurant office and "Dostoevski" restaurant's cultist sacrifice location
+- 8% Valuable (ALL valuables are possible except the diamond) spawns in grocery store office, real estate office, relaxation room, pinewood hotel restaurant, TerraGroup office
+- 1% Gold Deer Skull spawns "Dostoevski" restaurant's cultist circle
+- 5% Gold Deer Skull spawns marked rooms
+
+#### GroundZero
+- 6%(Lv.1)/10%(Lv.21+) Champagn spawns in Capital Insight meeting room, Fusion bar, TerraGroup kitchen, and 3 spawns in Winery
+
+### Loose Loot Spawn Locations (Spoilers)
+
+#### Customs
+![customs_military_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/customs_military_0.png)
+![customs_military_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/customs_military_1.png)
+![customs_monalisa](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/customs_monalisa.png)
+![customs_valuable_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/customs_valuable_0.png)
+![customs_valuable_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/customs_valuable_1.png)
+![customs_deer](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/customs_deer.png)
+
+#### Woods
+![woods_military_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/woods_military_0.png)
+![woods_military_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/woods_military_1.png)
+![woods_valuable_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/woods_valuable_0.png)
+![woods_valuable_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/woods_valuable_1.png)
+![woods_valuable_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/woods_valuable_2.png)
+![woods_deer_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/woods_deer_0.png)
+![woods_deer_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/woods_deer_1.png)
+![woods_deer_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/woods_deer_2.png)
+
+#### Interchange
+![interchange_drone_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/interchange_drone_0.png)
+![interchange_drone_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/interchange_drone_1.png)
+![interchange_drone_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/interchange_drone_2.png)
+![interchange_drone_3](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/interchange_drone_3.png)
+![interchange_drone_4](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/interchange_drone_4.png)
+![interchange_drone_5](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/interchange_drone_5.png)
+
+#### Reserve
+![reserve_missile_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/reserve_missile_0.png)
+![reserve_missile_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/reserve_missile_1.png)
+![reserve_missile_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/reserve_missile_2.png)
+![reserve_missile_3](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/reserve_missile_3.png)
+![reserve_missile_4](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/reserve_missile_4.png)
+![reserve_missile_5](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/reserve_missile_5.png)
+![reserve_deer_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/reserve_deer_0.png)
+![reserve_deer_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/reserve_deer_1.png)
+![reserve_deer_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/reserve_deer_2.png)
+
+#### Shoreline
+![shoreline_valuable2_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/shoreline_valuable2_0.png)
+![shoreline_valuable2_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/shoreline_valuable2_1.png)
+![shoreline_valuable1_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/shoreline_valuable1_0.png)
+![shoreline_valuable1_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/shoreline_valuable1_1.png)
+![shoreline_valuable1_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/shoreline_valuable1_2.png)
+![shoreline_deer_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/shoreline_deer_0.png)
+![shoreline_deer_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/shoreline_deer_1.png)
+
+#### Lighthouse
+![lighthouse_weed_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_weed_0.png)
+![lighthouse_weed_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_weed_1.png)
+![lighthouse_champagne](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_champagne.png)
+![lighthouse_monalisa](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_monalisa.png)
+![lighthouse_valuable_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_valuable_0.png)
+![lighthouse_valuable_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_valuable_1.png)
+![lighthouse_military_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_military_0.png)
+![lighthouse_military_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_military_1.png)
+![lighthouse_military_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_military_2.png)
+![lighthouse_deer](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/lighthouse_deer.png)
+
+#### Streets
+![streets_weed_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_weed_0.png)
+![streets_weed_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_weed_1.png)
+![streets_monalisa_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_monalisa_0.png)
+![streets_monalisa_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_monalisa_1.png)
+![streets_valuable_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_valuable_0.png)
+![streets_valuable_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_valuable_1.png)
+![streets_valuable_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_valuable_2.png)
+![streets_valuable_3](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_valuable_3.png)
+![streets_valuable_4](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_valuable_4.png)
+![streets_deer_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_deer_0.png)
+![streets_deer_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_deer_1.png)
+![streets_deer_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/streets_deer_2.png)
+
+#### GroundZero
+![groundzero_champagne_0](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/groundzero_champagne_0.png)
+![groundzero_champagne_1](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/groundzero_champagne_1.png)
+![groundzero_champagne_2](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/groundzero_champagne_2.png)
+![groundzero_champagne_3](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/groundzero_champagne_3.png)
+![groundzero_champagne_4](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/groundzero_champagne_4.png)
+![groundzero_champagne_5](https://raw.githubusercontent.com/TheYellowDoge/YellowDoge-TarkovRareCollectibles/refs/heads/main/images/groundzero_champagne_5.png)
+
+{.endtabset}
 
 ---
 
-## Models Credits
-"Diamond" (https://skfb.ly/6VQn8) by RBG_illustrations is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Gold Bar Single" (https://skfb.ly/oTGqw) by ArpitSaini_003 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Futuristic Smart Power Cell Box Game Ready Props" (https://skfb.ly/oQXuU) by aleksfotoart is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Flintlock" (https://skfb.ly/6CG7C) by fly4xy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Mona Lisa (PBR hires model)" (https://skfb.ly/6TC79) by SebastianSosnowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Weed Brick" (https://skfb.ly/ppFCw) by streetpharmacy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Eachine E58 Pocket Drone - Game Ready Asset" (https://skfb.ly/orIx8) by the_Thorminator is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Table Clock" (https://skfb.ly/6WQHw) by Mikhail Kadilnikov is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
-"stag lowpoly deer skull" (https://skfb.ly/oMMV9) by Young is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"HOXXOH GOLD GOLD" (https://skfb.ly/otyLY) by GregoirePopineau is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Art Deco Statue" (https://skfb.ly/6BVHO) by Grell is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
-"Missile & Bomb Collection - Fighter Jets - Free" (https://skfb.ly/oJECB) by bohmerang is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+## Licence & Credits
 
-## Licence
+## Credits Tabset {.tabset}
+
+### Licence
 MIT License
 
 Copyright (c) 2025 TheYellowDoge
@@ -142,3 +235,22 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+### Models Credits
+- "Diamond" (https://skfb.ly/6VQn8) by RBG_illustrations is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Gold Bar Single" (https://skfb.ly/oTGqw) by ArpitSaini_003 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Futuristic Smart Power Cell Box Game Ready Props" (https://skfb.ly/oQXuU) by aleksfotoart is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Flintlock" (https://skfb.ly/6CG7C) by fly4xy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Mona Lisa (PBR hires model)" (https://skfb.ly/6TC79) by SebastianSosnowski is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Weed Brick" (https://skfb.ly/ppFCw) by streetpharmacy is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Eachine E58 Pocket Drone - Game Ready Asset" (https://skfb.ly/orIx8) by the_Thorminator is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Table Clock" (https://skfb.ly/6WQHw) by Mikhail Kadilnikov is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).
+- "stag lowpoly deer skull" (https://skfb.ly/oMMV9) by Young is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "HOXXOH GOLD GOLD" (https://skfb.ly/otyLY) by GregoirePopineau is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Art Deco Statue" (https://skfb.ly/6BVHO) by Grell is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Missile & Bomb Collection - Fighter Jets - Free" (https://skfb.ly/oJECB) by bohmerang is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+- "BakeMyScan - baking example" (https://skfb.ly/6CJuM) by Loïc Norgeot is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Vintage Gramophone" (https://skfb.ly/6SFI6) by Maxim Mavrichev is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Dragon statuette" (https://skfb.ly/6xPTG) by Loïc Norgeot is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
+{.endtabset}
