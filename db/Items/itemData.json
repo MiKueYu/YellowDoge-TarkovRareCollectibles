@@ -131,14 +131,14 @@
         "fleaPriceRoubles": 2500000,
         "locales": {
             "en": {
-                "name": "Gold Statue",
-                "shortName": "GoldStatue",
-                "description": "A luxury decorative statue made completely out of gold."
+                "name": "Gold Figurine",
+                "shortName": "GoldFigurine",
+                "description": "A luxury decorative figurine made completely out of gold."
             },
             "fr": {
-                "name": "Statue en or",
-                "shortName": "StatueOr",
-                "description": "Une statue décorative de luxe entièrement fabriquée en or."
+                "name": "Figurine en or",
+                "shortName": "FigurineOr",
+                "description": "Une figurine décorative de luxe entièrement fabriquée en or."
             },
             "ch": {
                 "name": "黄金雕像",
@@ -168,8 +168,8 @@
         "itemTplToClone": "59faf7ca86f7740dbe19f6c2",
         "parentId": "57864c8c245977548867e7f1",
         "handbookParentId": "5b47574386f77428ca22b2f3",
-        "handbookPriceRoubles": 800000,
-        "fleaPriceRoubles": 800000,
+        "handbookPriceRoubles": 700000,
+        "fleaPriceRoubles": 700000,
         "locales": {
             "en": {
                 "name": "Pack of Weed",
@@ -479,9 +479,132 @@
                 "path": "TarkovCollectibles/tarkov_collectibles_gold_deer_skull.bundle",
                 "rcid": ""
             },
-            "Weight": 6.8,
+            "Weight": 7.8,
             "Width": 3,
             "Height": 4,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "generic",
+            "BackgroundColor": "red"
+        }
+    },
+    "68c35c198b8b18c0c707ffac": {
+        "newId": "68c35c198b8b18c0c707ffac",
+        "itemTplToClone": "59faf7ca86f7740dbe19f6c2",
+        "parentId": "57864a3d24597754843f8721",
+        "handbookParentId": "5b47574386f77428ca22b2f1",
+        "handbookPriceRoubles": 9800000,
+        "fleaPriceRoubles": 9800000,
+        "locales": {
+            "en": {
+                "name": "Gold Lion Figurine",
+                "shortName": "GoldLion",
+                "description": "A heavy gold lion figurine made with pure gold."
+            },
+            "fr": {
+                "name": "Figurine de lion en or",
+                "shortName": "LionOr",
+                "description": "Une lourde figurine de lion en or pur."
+            },
+            "ch": {
+                "name": "金狮雕像",
+                "shortName": "金狮",
+                "description": "一座沉重的纯金金狮雕像。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "TarkovCollectibles/tarkov_collectibles_gold_lion.bundle",
+                "rcid": ""
+            },
+            "Weight": 12.8,
+            "Width": 3,
+            "Height": 3,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "jewelry",
+            "BackgroundColor": "red"
+        }
+    },
+    "68c35c198b8b18c0c707ffad": {
+        "newId": "68c35c198b8b18c0c707ffad",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "57864a3d24597754843f8721",
+        "handbookParentId": "5b47574386f77428ca22b2f1",
+        "handbookPriceRoubles": 1680000,
+        "fleaPriceRoubles": 1680000,
+        "locales": {
+            "en": {
+                "name": "Antique Gramophone",
+                "shortName": "Gramophone",
+                "description": "An antique gramophone with a beautifully crafted golden horn."
+            },
+            "fr": {
+                "name": "Gramophone Antique",
+                "shortName": "Gramophone",
+                "description": "Un gramophone antique avec un cornet doré magnifiquement ouvragé."
+            },
+            "ch": {
+                "name": "古董留声机",
+                "shortName": "留声机",
+                "description": "一座古董留声机，配有精美打造的金色喇叭。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "TarkovCollectibles/tarkov_collectibles_gramophone.bundle",
+                "rcid": ""
+            },
+            "Weight": 3.5,
+            "Width": 2,
+            "Height": 2,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "generic",
+            "BackgroundColor": "red"
+        }
+    },
+    "68c35c198b8b18c0c707ffae": {
+        "newId": "68c35c198b8b18c0c707ffae",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "57864a3d24597754843f8721",
+        "handbookParentId": "5b47574386f77428ca22b2f1",
+        "handbookPriceRoubles": 1350000,
+        "fleaPriceRoubles": 1350000,
+        "locales": {
+            "en": {
+                "name": "Dragon Figurine",
+                "shortName": "WoodDragon",
+                "description": "A finely crafted wooden dragon figurine with a lifelike and majestic appearance."
+            },
+            "fr": {
+                "name": "Figurine de dragon",
+                "shortName": "DragonBois",
+                "description": "Une figurine de dragon en bois finement sculptée, à l'apparence réaliste et majestueuse."
+            },
+            "ch": {
+                "name": "龙形木雕",
+                "shortName": "木龙",
+                "description": "一件精雕细琢的木质龙形雕像，神态逼真，气势恢宏。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "TarkovCollectibles/tarkov_collectibles_wood_dragon.bundle",
+                "rcid": ""
+            },
+            "Weight": 2.8,
+            "Width": 2,
+            "Height": 2,
             "CanSellOnRagfair": false,
             "ExaminedByDefault": false,
             "ExamineTime": 1,

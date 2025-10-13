@@ -5,9 +5,26 @@ import { ConfigTypes } from "@spt/models/enums/ConfigTypes";
 import { IItemConfig } from "@spt/models/spt/config/IItemConfig";
 import { IPmcConfig } from "@spt/models/spt/config/IPmcConfig";
 
-import { containerLookup, traderLookup, totalRelativeProbability, looseLootTemplate } from "./constants";
+import { containerLookup, traderLookup, containerTotalProbability, looseLootTotalSpawns, looseLootTotalProbability, looseLootTemplate } from "./constants";
 
-interface LootPosition { x: number; y: number; z: number; }
+interface LootPosition {
+    x: number;
+    y: number;
+    z: number;
+}
+
+interface LooseLootItem {
+    _tpl: string;
+    _id: string;
+    relativeProbability: number;
+}
+
+interface SpawnData {
+    Id: string;
+    Position: LootPosition;
+    probability: number;
+    Items: LooseLootItem[];
+}
 
 export class DogeItemService {
     private logger: ILogger;
@@ -50,10 +67,10 @@ export class DogeItemService {
                     continue;
                 }
 
-                const totalProbability = totalRelativeProbability[mapName][containerName]
+                const totalProbability = containerTotalProbability[mapName][containerName]
 
                 if (totalProbability === undefined) {
-                    this.logger.warning(`TotalRelativeProbability not found for Container ID ${containerID} in map ${mapName}`);
+                    this.logger.warning(`containerTotalProbability not found for Container ID ${containerID} in map ${mapName}`);
                 } else {
                     // Convert spawnProbability (float) to relativeProbability (int)
                     let spawnProbability = mapLoot[containerName] * staticLootMultiplier;
@@ -77,61 +94,6 @@ export class DogeItemService {
 
                     lootContainer.itemDistribution.push(...newLoot);
                 }
-            }
-        }
-    }
-
-    private createLooseLootSpawn(
-        itemId: string,
-        spawnData: {
-            Id: string;
-            Position: LootPosition;
-            probability: number;
-        }
-    ): any {
-        const spawn = {
-            ...looseLootTemplate,
-            locationId: `(${spawnData.Position.x}, ${spawnData.Position.y}, ${spawnData.Position.z})`,
-            probability: spawnData.probability,
-            template: {
-                ...looseLootTemplate.template,
-                Id: spawnData.Id,
-                Position: spawnData.Position,
-                Items: looseLootTemplate.template.Items.map(item => ({
-                    ...item,
-                    _tpl: itemId
-                }))
-            }
-        };
-        return spawn;
-    }
-
-    public addtoLooseLoot(
-        itemId: string,
-        looseLootData: Record<string, any[]>,
-        looseLootMultiplier: number
-    ): void {
-        // Loop through all maps in looseLootData
-        for (const mapName of Object.keys(looseLootData)) {
-            const mapLoot = looseLootData[mapName];
-            const location = this.database.locations[mapName];
-
-            if (!location) continue;
-
-            // Loop through spawnData for this map
-            for (const spawnData of mapLoot) {
-
-                // Apply looseLootMultiplier
-                let newRelativeProbability = spawnData["probability"] * looseLootMultiplier;
-
-                if (newRelativeProbability > 5) {
-                    this.logger.warning(`Force RelativeProbability=5 for item ${itemId} for loose loot spawn point ${spawnData.locationId} in map ${mapName}`);
-                    newRelativeProbability = 5;
-                }
-                spawnData["probability"] = newRelativeProbability;
-                const looseLootSpawn = this.createLooseLootSpawn(itemId, spawnData)
-
-                location.looseLoot.spawnpoints.push(looseLootSpawn);
             }
         }
     }
@@ -198,6 +160,97 @@ export class DogeItemService {
 
         if (!PMCConfig.globalLootBlacklist.includes(itemId)) {
             PMCConfig.globalLootBlacklist.push(itemId);
+        }
+    }
+
+    private estimateLooseLootProbability(
+        totalSpawns: number,
+        totalRelativeProbability: number,
+        spawnChance: number
+    ): number {
+        const clampedChance = Math.max(1e-6, Math.min(spawnChance, 0.98));
+        const perDrawProb = 1 - Math.pow(1 - clampedChance, 1 / totalSpawns);
+        const relativeProb = perDrawProb * totalRelativeProbability;
+
+        return relativeProb;
+    }
+
+    private createLooseLootSpawn(
+        spawnData: SpawnData
+    ): any {
+        const spawn = {
+            ...looseLootTemplate,
+            locationId: `(${spawnData.Position.x}, ${spawnData.Position.y}, ${spawnData.Position.z})`,
+            probability: spawnData.probability,
+            template: {
+                ...looseLootTemplate.template,
+                Id: spawnData.Id,
+                Position: spawnData.Position,
+                // map each new item properly
+                Items: spawnData.Items.map(item => ({
+                    _tpl: item._tpl,
+                    _id: item._id,
+                    upd: {
+                        StackObjectsCount: 1
+                    }
+                }))
+            },
+            itemDistribution: spawnData.Items.map(item => ({
+                composedKey: { key: item._id },
+                relativeProbability: item.relativeProbability
+            }))
+        };
+
+        return spawn;
+    }
+
+    private createLooseLootSpawnOLD(
+        itemId: string,
+        spawnData: {
+            Id: string;
+            Position: { x: number; y: number; z: number; };
+            probability: number;
+        }
+    ): any {
+        const spawn = {
+            ...looseLootTemplate,
+            locationId: `(${spawnData.Position.x}, ${spawnData.Position.y}, ${spawnData.Position.z})`,
+            probability: spawnData.probability,
+            template: {
+                ...looseLootTemplate.template,
+                Id: "", // TEST Id: spawnData.Id
+                Position: spawnData.Position,
+                Items: looseLootTemplate.template.Items.map(item => ({
+                    ...item,
+                    _tpl: itemId
+                }))
+            }
+        };
+        return spawn;
+    }
+
+    public loadLooseLoot(
+        looseLootData: Record<string, SpawnData[]>,
+        looseLootMultiplier: number
+    ): void {
+        // Loop through all maps in looseLootData
+        for (const mapName of Object.keys(looseLootData)) {
+            const mapLoot = looseLootData[mapName];
+            const location = this.database.locations[mapName];
+
+            if (!location) continue;
+
+            // Loop through spawnData for this map
+            for (const spawnData of mapLoot) {
+
+                // Apply looseLootMultiplier
+                const newProbability = spawnData["probability"] * looseLootMultiplier;
+                const relativeProbability = this.estimateLooseLootProbability(looseLootTotalSpawns[mapName], looseLootTotalProbability[mapName], newProbability)
+                spawnData["probability"] = relativeProbability;
+                const looseLootSpawn = this.createLooseLootSpawn(spawnData)
+
+                location.looseLoot.spawnpoints.push(looseLootSpawn);
+            }
         }
     }
 

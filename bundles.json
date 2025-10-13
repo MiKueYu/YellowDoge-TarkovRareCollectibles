@@ -47,6 +47,18 @@
         {
             "key": "TarkovCollectibles/tarkov_collectibles_gold_deer_skull.bundle",
             "dependencyKeys": []
+        },
+        {
+            "key": "TarkovCollectibles/tarkov_collectibles_gold_lion.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "TarkovCollectibles/tarkov_collectibles_gramophone.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "TarkovCollectibles/tarkov_collectibles_wood_dragon.bundle",
+            "dependencyKeys": []
         }
     ]
 }

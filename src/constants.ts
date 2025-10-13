@@ -62,7 +62,7 @@ export const traderLookup: Record<string, string> = {
     "Ref": "6617beeaa9cfa777ca915b7c"
 };
 
-export const totalRelativeProbability: Record<string, Record<string, number>> = {
+export const containerTotalProbability: Record<string, Record<string, number>> = {
     "bigmap": {
         "AmmoBox": 64427,
         "CashRegister": 40148,
@@ -349,6 +349,36 @@ export const totalRelativeProbability: Record<string, Record<string, number>> = 
     }
 };
 
+export const looseLootTotalSpawns = {
+    "bigmap": 250,
+    "factory4_day": 50,
+    "factory4_night": 50,
+    "woods": 250,
+    "interchange": 240,
+    "rezervbase": 240,
+    "shoreline": 550,
+    "lighthouse": 570,
+    "laboratory": 220,
+    "tarkovstreets": 570,
+    "sandbox": 140,
+    "sandbox_high": 270
+};
+
+export const looseLootTotalProbability = {
+    "bigmap": 99.60739910313912,
+    "factory4_day": 10.294407158836682,
+    "factory4_night": 13.215355805243405,
+    "woods": 149.08705718916457,
+    "interchange": 109.017441860465,
+    "rezervbase": 106.22497745716873,
+    "shoreline": 151.9147215160621,
+    "lighthouse": 245.50314183123905,
+    "laboratory": 86.40636200716838,
+    "tarkovstreets": 264.1437167322393,
+    "sandbox": 73.00710032065963,
+    "sandbox_high": 128.38679245283026
+};
+
 export const looseLootTemplate = {
     template: {
         IsContainer: false,
@@ -361,6 +391,7 @@ export const looseLootTemplate = {
         Root: "",
         Items: [
             {
+                "_tpl": "mongoID",
                 "_id": "1234567890",
                 "upd": {
                     "StackObjectsCount": 1

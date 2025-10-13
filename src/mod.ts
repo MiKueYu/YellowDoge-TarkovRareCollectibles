@@ -40,12 +40,12 @@ class TarkovCollectibles implements IPostDBLoadMod
         for (const itemId of Object.keys(itemIdLookup)) {
             customItemService.createItemFromClone(itemData[itemId]);
             itemService.addtoStaticLoot(itemId, staticLootData[itemId], config["staticLootMultiplier"]);
-            itemService.addtoLooseLoot(itemId, looseLootData[itemId], config["looseLootMultiplier"])
             itemService.addtoTraderTrades(itemId, traderData[itemId]);
             itemService.addtoHallofFame(itemId, hallofFameData[itemId]);
             itemService.removeFromRewardPool(itemId);
             itemService.removeFromPMCLootPool(itemId);
         }
+        itemService.loadLooseLoot(looseLootData, config["looseLootMultiplier"])
 
         logger.info("[Tarkov Rare Collectibles] Finished loading items");
 

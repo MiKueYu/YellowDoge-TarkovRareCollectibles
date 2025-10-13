@@ -118,5 +118,35 @@
         "Ragman": false,
         "Jaeger": false,
         "Ref": false
+    },
+    "68c35c198b8b18c0c707ffac": {
+        "Prapor": false,
+        "Therapist": false,
+        "Skier": true,
+        "Peacekeeper": false,
+        "Mechanic": false,
+        "Ragman": false,
+        "Jaeger": false,
+        "Ref": false
+    },
+    "68c35c198b8b18c0c707ffad": {
+        "Prapor": false,
+        "Therapist": false,
+        "Skier": false,
+        "Peacekeeper": false,
+        "Mechanic": false,
+        "Ragman": true,
+        "Jaeger": false,
+        "Ref": false
+    },
+    "68c35c198b8b18c0c707ffae": {
+        "Prapor": false,
+        "Therapist": false,
+        "Skier": false,
+        "Peacekeeper": false,
+        "Mechanic": false,
+        "Ragman": false,
+        "Jaeger": true,
+        "Ref": false
     }
 }
