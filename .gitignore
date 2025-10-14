@@ -1,4 +1,4 @@
 .vscode*
 .build*
 .es*
-/dist
+SPT 3.11/dist
