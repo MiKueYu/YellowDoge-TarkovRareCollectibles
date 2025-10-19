@@ -806,5 +806,94 @@
             "scavDead": 0.006,
             "wood_cache": 0.001
         }
+    },
+    "68c35c198b8b18c0c606ffa2": {
+        "bigmap": {
+            "Jacket": 0.01,
+            "MedBag": 0.008,
+            "MedBox": 0.008,
+            "PMC_dead": 0.005,
+            "barrel_cache": 0.001,
+            "scavDead": 0.01,
+            "wood_cache": 0.001
+        },
+        "factory4_day": {
+            "Jacket": 0.008,
+            "MedBag": 0.005,
+            "PMC_dead": 0.002,
+            "scavDead": 0.006
+        },
+        "factory4_night": {
+            "Jacket": 0.008,
+            "MedBag": 0.005,
+            "PMC_dead": 0.002,
+            "scavDead": 0.006
+        },
+        "interchange": {
+            "Jacket": 0.008,
+            "MedBag": 0.005,
+            "MedBox": 0.005,
+            "barrel_cache": 0.001,
+            "scavDead": 0.006,
+            "wood_cache": 0.001
+        },
+        "laboratory": {
+            "Jacket": 0.008,
+            "MedBag": 0.005,
+            "MedBox": 0.005,
+            "PMC_dead": 0.002
+        },
+        "lighthouse": {
+            "Jacket": 0.01,
+            "MedBag": 0.008,
+            "MedBag_adv": 0.008,
+            "MedBox": 0.008,
+            "barrel_cache": 0.001,
+            "scavDead": 0.01,
+            "wood_cache": 0.001
+        },
+        "rezervbase": {
+            "Jacket": 0.008,
+            "MedBag": 0.005,
+            "MedBox": 0.005,
+            "scavDead": 0.006
+        },
+        "sandbox": {
+            "Jacket": 0.008,
+            "MedBag": 0.005,
+            "MedBox": 0.005,
+            "PMC_dead": 0.002,
+            "scavDead": 0.006
+        },
+        "sandbox_high": {
+            "Jacket": 0.008,
+            "MedBag": 0.005,
+            "MedBox": 0.005,
+            "PMC_dead": 0.002,
+            "scavDead": 0.006
+        },
+        "shoreline": {
+            "Jacket": 0.006,
+            "MedBag": 0.003,
+            "MedBox": 0.003,
+            "barrel_cache": 0.001,
+            "scavDead": 0.006,
+            "wood_cache": 0.001
+        },
+        "tarkovstreets": {
+            "Jacket": 0.01,
+            "MedBag": 0.008,
+            "MedBox": 0.008,
+            "barrel_cache": 0.001,
+            "scavDead": 0.01
+        },
+        "woods": {
+            "Jacket": 0.008,
+            "MedBag": 0.005,
+            "PMC_dead": 0.002,
+            "barrel_cache": 0.001,
+            "scavDead": 0.006,
+            "wood_cache": 0.001
+        }
     }
 }

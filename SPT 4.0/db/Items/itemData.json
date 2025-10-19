@@ -623,19 +623,19 @@
         "fleaPriceRoubles": 7500000,
         "locales": {
             "en": {
-                "name": "Resuscitation Ventilator",
-                "shortName": "Resuscitator",
-                "description": "Medical device, an assisted breathing apparatus designed specifically for patients whose vital signs are extremely weak and whose spontaneous breathing has ceased. The final line of defense for life."
+                "name": "Automated External Defibrillator",
+                "shortName": "AED",
+                "description": "A portable medical device used for emergency treatment of sudden cardiac arrest. Easy to operate, with built-in voice guidance, it saves lives at critical moments."
             },
             "fr": {
-                "name": "Ventilateur de Réanimation",
-                "shortName": "Réanimateur",
-                "description": "Équipement médical, un appareil d'assistance respiratoire spécialement conçu pour les patients dont les signes vitaux sont extrêmement faibles et dont la respiration spontanée a cessé. La ligne de défense ultime pour la vie."
+                "name": "Défibrillateur Externe Automatisé",
+                "shortName": "DEA",
+                "description": "Un appareil médical portable utilisé pour le traitement d'urgence de l'arrêt cardiaque soudain. Facile à utiliser, avec des instructions vocales intégrées, il sauve des vies dans les moments critiques."
             },
             "ch": {
-                "name": "复苏呼吸机",
-                "shortName": "复苏呼吸机",
-                "description": "医疗道具，专为体征已经极度衰弱，自主呼吸已经消失的病患设计的辅助呼吸设备，生命的最终防线。"
+                "name": "自动体外除颤器",
+                "shortName": "AED",
+                "description": "便携式医疗设备，用于心脏骤停急救。操作简便，内置语音指导，关键时刻挽救生命。"
             }
         },
         "overrideProperties": {
@@ -686,6 +686,47 @@
             },
             "Weight": 15,
             "Width": 3,
+            "Height": 2,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "generic",
+            "BackgroundColor": "red"
+        }
+    },
+    "68c35c198b8b18c0c606ffa2": {
+        "newId": "68c35c198b8b18c0c606ffa2",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "57864c8c245977548867e7f1",
+        "handbookParentId": "5b47574386f77428ca22b2f3",
+        "handbookPriceRoubles": 1000000,
+        "fleaPriceRoubles": 1000000,
+        "locales": {
+            "en": {
+                "name": "Ventilator",
+                "shortName": "Ventilator",
+                "description": "A medical device that assists or completely replaces a patient's breathing, by providing oxygen to the patient and controlling the respiratory rate and pressure, to improve respiratory function and sustain life."
+            },
+            "fr": {
+                "name": "Respirateur",
+                "shortName": "Respirateur",
+                "description": "Un dispositif médical qui assiste ou remplace complètement la respiration d'un patient, en lui fournissant de l'oxygène et en contrôlant la fréquence et la pression respiratoire, afin d'améliorer la fonction respiratoire et de maintenir la vie."
+            },
+            "ch": {
+                "name": "呼吸机",
+                "shortName": "呼吸机",
+                "description": "医疗道具，能够协助或完全替代患者呼吸，通过向患者提供氧气和控制呼吸频率与压力，以改善呼吸功能和维持生命。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/breath_machine.bundle",
+                "rcid": ""
+            },
+            "Weight": 1,
+            "Width": 2,
             "Height": 2,
             "CanSellOnRagfair": false,
             "ExaminedByDefault": false,

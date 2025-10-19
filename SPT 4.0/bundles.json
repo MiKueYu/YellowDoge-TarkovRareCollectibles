@@ -63,10 +63,13 @@
         {
             "key": "DeltaForce/aed.bundle",
             "dependencyKeys": []
-        }
-        ,
+        },
         {
             "key": "DeltaForce/blackbox.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "DeltaForce/breath_machine.bundle",
             "dependencyKeys": []
         }
     ]
