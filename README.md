@@ -6,7 +6,8 @@ Inspired by other extraction shooters like Arena Breakout: Infinite and Delta Fo
 
 ## Installation
 
-1. Extract user/ folder to SPT root directory
+SPT-4.0: Extract SPT/ folder to SPT root directory
+SPT-3.11: Extract user/ folder to SPT root directory
 
 ---
 
@@ -14,7 +15,8 @@ Inspired by other extraction shooters like Arena Breakout: Infinite and Delta Fo
 
 ### Adjust Loot Spawn Modifier
 
-1. Open user/mods/yellowdoge-tarkovrarecollectibles/config/config.json
+1. (SPT-4.0) Open SPT/user/mods/yellowdoge-tarkovrarecollectibles/config/config.json
+   (SPT-3.11)Open user/mods/yellowdoge-tarkovrarecollectibles/config/config.json
 
 2. Adjust "staticLootMultiplier" to multiply the spawn rate for containers (value must be a number, or it will break the code). Adjust  "looseLootMultiplier" to multiply the spawn rate for items outside of containers.
 
