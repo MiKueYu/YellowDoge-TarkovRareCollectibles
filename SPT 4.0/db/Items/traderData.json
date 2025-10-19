@@ -148,5 +148,25 @@
         "Ragman": false,
         "Jaeger": true,
         "Ref": false
+    },
+    "68c35c198b8b18c0c606ffa0": {
+        "Prapor": false,
+        "Therapist": true,
+        "Skier": false,
+        "Peacekeeper": false,
+        "Mechanic": false,
+        "Ragman": false,
+        "Jaeger": false,
+        "Ref": false
+    },
+    "68c35c198b8b18c0c606ffa1": {
+        "Prapor": false,
+        "Therapist": true,
+        "Skier": false,
+        "Peacekeeper": false,
+        "Mechanic": false,
+        "Ragman": false,
+        "Jaeger": false,
+        "Ref": false
     }
 }

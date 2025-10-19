@@ -283,6 +283,18 @@
                     "relativeProbability": 4
                 }
             ]
+        },
+        {
+            "Id": "tarkov_collectibles_woods_black_box_spawn_0",
+            "Position": { "x": -247.580, "y": 12.389, "z": -24.000 },
+            "probability": 0.01,
+            "Items": [
+                {
+                    "_tpl": "68c35c198b8b18c0c606ffa1",
+                    "_id": "60615151001",
+                    "relativeProbability": 4
+                }
+            ]
         }
     ],
     "interchange": [
@@ -640,6 +652,11 @@
                     "_tpl": "68c35c198b8b18c0c707ffa4",
                     "_id": "70715151004",
                     "relativeProbability": 4
+                },
+                {
+                    "_tpl": "68c35c198b8b18c0c606ffa0",
+                    "_id": "60615151000",
+                    "relativeProbability": 4
                 }
             ]
         },
@@ -651,6 +668,11 @@
                 {
                     "_tpl": "68c35c198b8b18c0c707ffa4",
                     "_id": "70715151004",
+                    "relativeProbability": 4
+                },
+                {
+                    "_tpl": "68c35c198b8b18c0c606ffa0",
+                    "_id": "60615151000",
                     "relativeProbability": 4
                 }
             ]
@@ -792,6 +814,18 @@
                 {
                     "_tpl": "68c35c198b8b18c0c707ffa8",
                     "_id": "70715151008",
+                    "relativeProbability": 4
+                }
+            ]
+        },
+        {
+            "Id": "tarkov_collectibles_lighthouse_black_box_spawn_0",
+            "Position": { "x": -130.503, "y": 21.616, "z": 305.078 },
+            "probability": 0.05,
+            "Items": [
+                {
+                    "_tpl": "68c35c198b8b18c0c606ffa1",
+                    "_id": "60615151001",
                     "relativeProbability": 4
                 }
             ]
@@ -1189,6 +1223,11 @@
                     "_tpl": "68c35c198b8b18c0c707ffa4",
                     "_id": "70715151004",
                     "relativeProbability": 4
+                },
+                {
+                    "_tpl": "68c35c198b8b18c0c606ffa0",
+                    "_id": "60615151000",
+                    "relativeProbability": 4
                 }
             ]
         },
@@ -1200,6 +1239,11 @@
                 {
                     "_tpl": "68c35c198b8b18c0c707ffa4",
                     "_id": "70715151004",
+                    "relativeProbability": 4
+                },
+                {
+                    "_tpl": "68c35c198b8b18c0c606ffa0",
+                    "_id": "60615151000",
                     "relativeProbability": 4
                 }
             ]

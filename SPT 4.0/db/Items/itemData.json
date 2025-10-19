@@ -613,5 +613,87 @@
             "ItemSound": "generic",
             "BackgroundColor": "red"
         }
+    },
+    "68c35c198b8b18c0c606ffa0": {
+        "newId": "68c35c198b8b18c0c606ffa0",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "57864c8c245977548867e7f1",
+        "handbookParentId": "5b47574386f77428ca22b2f3",
+        "handbookPriceRoubles": 7500000,
+        "fleaPriceRoubles": 7500000,
+        "locales": {
+            "en": {
+                "name": "Resuscitation Ventilator",
+                "shortName": "Resuscitator",
+                "description": "Medical device, an assisted breathing apparatus designed specifically for patients whose vital signs are extremely weak and whose spontaneous breathing has ceased. The final line of defense for life."
+            },
+            "fr": {
+                "name": "Ventilateur de Réanimation",
+                "shortName": "Réanimateur",
+                "description": "Équipement médical, un appareil d'assistance respiratoire spécialement conçu pour les patients dont les signes vitaux sont extrêmement faibles et dont la respiration spontanée a cessé. La ligne de défense ultime pour la vie."
+            },
+            "ch": {
+                "name": "复苏呼吸机",
+                "shortName": "复苏呼吸机",
+                "description": "医疗道具，专为体征已经极度衰弱，自主呼吸已经消失的病患设计的辅助呼吸设备，生命的最终防线。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/aed.bundle",
+                "rcid": ""
+            },
+            "Weight": 5,
+            "Width": 3,
+            "Height": 3,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "generic",
+            "BackgroundColor": "red"
+        }
+    },
+    "68c35c198b8b18c0c606ffa1": {
+        "newId": "68c35c198b8b18c0c606ffa1",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "57864a66245977548f04a81f",
+        "handbookParentId": "5b47574386f77428ca22b2ef",
+        "handbookPriceRoubles": 7000000,
+        "fleaPriceRoubles": 7000000,
+        "locales": {
+            "en": {
+                "name": "Flight Recorder",
+                "shortName": "Black Box",
+                "description": "Electronic item, flight data recorder."
+            },
+            "fr": {
+                "name": "Enregistreur de vol",
+                "shortName": "Boîte noire",
+                "description": "Article électronique, enregistreur de données de vol."
+            },
+            "ch": {
+                "name": "飞行记录仪",
+                "shortName": "黑匣子",
+                "description": "电子物品，飞行数据记录仪。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/blackbox.bundle",
+                "rcid": ""
+            },
+            "Weight": 15,
+            "Width": 3,
+            "Height": 2,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "generic",
+            "BackgroundColor": "red"
+        }
     }
 }

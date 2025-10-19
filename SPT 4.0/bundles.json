@@ -59,6 +59,15 @@
         {
             "key": "TarkovCollectibles/tarkov_collectibles_wood_dragon.bundle",
             "dependencyKeys": []
+        },
+        {
+            "key": "DeltaForce/aed.bundle",
+            "dependencyKeys": []
+        }
+        ,
+        {
+            "key": "DeltaForce/blackbox.bundle",
+            "dependencyKeys": []
         }
     ]
 }
