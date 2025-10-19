@@ -643,8 +643,8 @@
                 "path": "DeltaForce/aed.bundle",
                 "rcid": ""
             },
-            "Weight": 5,
-            "Width": 3,
+            "Weight": 1.3,
+            "Width": 2,
             "Height": 3,
             "CanSellOnRagfair": false,
             "ExaminedByDefault": false,
@@ -727,6 +727,88 @@
             },
             "Weight": 1,
             "Width": 2,
+            "Height": 2,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "generic",
+            "BackgroundColor": "red"
+        }
+    },
+    "68c35c198b8b18c0c606ffa3": {
+        "newId": "68c35c198b8b18c0c606ffa3",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "57864a66245977548f04a81f",
+        "handbookParentId": "5b47574386f77428ca22b2ef",
+        "handbookPriceRoubles": 3000000,
+        "fleaPriceRoubles": 3000000,
+        "locales": {
+            "en": {
+                "name": "Armored Vehicle Battery",
+                "shortName": "Armored Vehicle Battery",
+                "description": "A large energy storage battery that provides power for armored vehicles, it is a customized product designed to meet military requirements."
+            },
+            "fr": {
+                "name": "Batterie de Véhicule Blindé",
+                "shortName": "Batterie de Véhicule Blindé",
+                "description": "Une grande batterie de stockage d'énergie qui fournit de la puissance aux véhicules blindés, c'est un produit personnalisé conçu pour répondre aux exigences militaires."
+            },
+            "ch": {
+                "name": "装甲车电池",
+                "shortName": "装甲车电池",
+                "description": "为装甲车辆提供动力的大型储能电池，是为了满足军用要求而设计的定制化产品。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/btrbattery.bundle",
+                "rcid": ""
+            },
+            "Weight": 15,
+            "Width": 3,
+            "Height": 2,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "generic",
+            "BackgroundColor": "red"
+        }
+    },
+    "68c35c198b8b18c0c606ffa4": {
+        "newId": "68c35c198b8b18c0c606ffa4",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "57864a3d24597754843f8721",
+        "handbookParentId": "5b47574386f77428ca22b2f1",
+        "handbookPriceRoubles": 2800000,
+        "fleaPriceRoubles": 2800000,
+        "locales": {
+            "en": {
+                "name": "Infantry Fighting Vehicle Model",
+                "shortName": "IFV Model",
+                "description": "A precisely scaled IFV model with rich details, featuring a metal barrel and rubber tires. A fine piece for military collectors."
+            },
+            "fr": {
+                "name": "Maquette d'engin blindé d'infanterie",
+                "shortName": "Maquette IFV",
+                "description": "Maquette IFV à l’échelle précise et aux détails riches, avec canon en métal et pneus en caoutchouc. Un excellent choix pour les collectionneurs."
+            },
+            "ch": {
+                "name": "步战车模型",
+                "shortName": "步战车模型",
+                "description": "这台步战车仿真模型，比例精确，细节丰富。配有金属炮管及橡胶轮胎，是军事爱好者收藏的绝佳之选。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/btrmodel.bundle",
+                "rcid": ""
+            },
+            "Weight": 2.3,
+            "Width": 3,
             "Height": 2,
             "CanSellOnRagfair": false,
             "ExaminedByDefault": false,

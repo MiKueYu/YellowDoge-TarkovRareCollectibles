@@ -71,6 +71,14 @@
         {
             "key": "DeltaForce/breath_machine.bundle",
             "dependencyKeys": []
+        },
+        {
+            "key": "DeltaForce/btrbattery.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "DeltaForce/btrmodel.bundle",
+            "dependencyKeys": []
         }
     ]
 }
