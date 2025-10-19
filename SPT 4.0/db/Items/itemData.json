@@ -818,5 +818,46 @@
             "ItemSound": "generic",
             "BackgroundColor": "red"
         }
+    },
+    "68c35c198b8b18c0c606ffa5": {
+        "newId": "68c35c198b8b18c0c606ffa5",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "590c745b86f7743cc433c5f2",
+        "handbookParentId": "5b47574386f77428ca22b2f4",
+        "handbookPriceRoubles": 2500000,
+        "fleaPriceRoubles": 2500000,
+        "locales": {
+            "en": {
+                "name": "Military Cannon Ammo",
+                "shortName": "Cannon Ammo",
+                "description": "Military item, fully automatic multi-mode cannon ammunition, can be loaded on various military equipment."
+            },
+            "fr": {
+                "name": "Munition de canon militaire",
+                "shortName": "Munition Canon",
+                "description": "Article militaire, munition de canon automatique multi-mode, peut être chargée sur divers équipements militaires."
+            },
+            "ch": {
+                "name": "军用炮弹",
+                "shortName": "军用炮弹",
+                "description": "军用物品，全自动多模式炮弹，可装载于多种军用设备上。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/cannon_ammo.bundle",
+                "rcid": ""
+            },
+            "Weight": 40,
+            "Width": 3,
+            "Height": 2,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "smallmetal",
+            "BackgroundColor": "red"
+        }
     }
 }

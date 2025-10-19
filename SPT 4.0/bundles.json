@@ -79,6 +79,10 @@
         {
             "key": "DeltaForce/btrmodel.bundle",
             "dependencyKeys": []
+        },
+        {
+            "key": "DeltaForce/cannon_ammo.bundle",
+            "dependencyKeys": []
         }
     ]
 }

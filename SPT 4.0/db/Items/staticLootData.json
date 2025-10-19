@@ -921,5 +921,98 @@
             "terraWBoxSquare": 0.003,
             "terraWBoxSquareBig": 0.004
         }
+    },
+    "68c35c198b8b18c0c606ffa5": {
+        "bigmap": {
+            "WeaponCrate": 0.004,
+            "terraWBoxLong": 0.003,
+            "terraWBoxLongBig": 0.004,
+            "terraWBoxSquare": 0.003,
+            "terraWBoxSquareBig": 0.004,
+            "AmmoBox": 0.002,
+            "barrel_cache": 0.001,
+            "wood_cache": 0.001
+        },
+        "factory4_day": {
+            "WeaponCrate": 0.003,
+            "terraWBoxLong": 0.002
+        },
+        "factory4_night": {
+            "WeaponCrate": 0.003,
+            "terraWBoxLong": 0.002
+        },
+        "interchange": {
+            "WeaponCrate": 0.006,
+            "terraWBoxLong": 0.008,
+            "terraWBoxLongBig": 0.012,
+            "terraWBoxSquare": 0.008,
+            "terraWBoxSquareBig": 0.012,
+            "AmmoBox": 0.003
+        },
+        "laboratory": {
+            "terraWBoxLong": 0.015,
+            "terraWBoxLongBig": 0.02,
+            "terraWBoxSquare": 0.015,
+            "terraWBoxSquareBig": 0.02
+        },
+        "lighthouse": {
+            "WeaponCrate": 0.008,
+            "terraWBoxLong": 0.01,
+            "terraWBoxLongBig": 0.015,
+            "terraWBoxSquare": 0.01,
+            "terraWBoxSquareBig": 0.015,
+            "AmmoBox": 0.004,
+            "barrel_cache": 0.002,
+            "wood_cache": 0.002
+        },
+        "rezervbase": {
+            "WeaponCrate": 0.01,
+            "terraWBoxLong": 0.015,
+            "terraWBoxLongBig": 0.02,
+            "terraWBoxSquare": 0.015,
+            "terraWBoxSquareBig": 0.02,
+            "AmmoBox": 0.005
+        },
+        "sandbox": {
+            "WeaponCrate": 0.006,
+            "terraWBoxLong": 0.008,
+            "AmmoBox": 0.003
+        },
+        "sandbox_high": {
+            "WeaponCrate": 0.008,
+            "terraWBoxLong": 0.012,
+            "terraWBoxLongBig": 0.016,
+            "terraWBoxSquare": 0.012,
+            "terraWBoxSquareBig": 0.016,
+            "AmmoBox": 0.004
+        },
+        "shoreline": {
+            "WeaponCrate": 0.005,
+            "terraWBoxLong": 0.008,
+            "terraWBoxLongBig": 0.012,
+            "terraWBoxSquare": 0.008,
+            "terraWBoxSquareBig": 0.012,
+            "AmmoBox": 0.003,
+            "barrel_cache": 0.002,
+            "wood_cache": 0.002
+        },
+        "tarkovstreets": {
+            "WeaponCrate": 0.006,
+            "terraWBoxLong": 0.012,
+            "terraWBoxLongBig": 0.016,
+            "terraWBoxSquare": 0.012,
+            "terraWBoxSquareBig": 0.016,
+            "AmmoBox": 0.004
+        },
+        "woods": {
+            "WeaponCrate": 0.005,
+            "terraWBoxLong": 0.008,
+            "terraWBoxLongBig": 0.012,
+            "terraWBoxSquare": 0.008,
+            "terraWBoxSquareBig": 0.012,
+            "AmmoBox": 0.003,
+            "barrel_cache": 0.002,
+            "wood_cache": 0.002
+        }
     }
 }
