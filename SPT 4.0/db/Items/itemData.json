@@ -11,7 +11,7 @@
                 "name": "20-Carat Diamond",
                 "shortName": "Diamond",
                 "description": "A rare and flawless 20-carat diamond, highly valuable and sought after by collectors and traders alike."
-            },
+},
             "fr": {
                 "name": "Diamant de 20 carats",
                 "shortName": "Diamant",
@@ -862,7 +862,7 @@
     },
     "68c35c198b8b18c0c606ffa6": {
         "newId": "68c35c198b8b18c0c606ffa6",
-        "itemTplToClone": "59faf7ca86f7740dbe19f6c2",
+        "itemTplToClone": "59e3647686f774176a362507",
         "parentId": "57864a3d24597754843f8721",
         "handbookParentId": "5b47574386f77428ca22b2f1",
         "handbookPriceRoubles": 6000000,
@@ -903,7 +903,7 @@
     },
     "68c35c198b8b18c0c606ffa7": {
         "newId": "68c35c198b8b18c0c606ffa7",
-        "itemTplToClone": "59faf7ca86f7740dbe19f6c2",
+        "itemTplToClone": "59e3647686f774176a362507",
         "parentId": "57864a3d24597754843f8721",
         "handbookParentId": "5b47574386f77428ca22b2f1",
         "handbookPriceRoubles": 500000,
@@ -944,7 +944,7 @@
     },
     "68c35c198b8b18c0c606ffa8": {
         "newId": "68c35c198b8b18c0c606ffa8",
-        "itemTplToClone": "59faf7ca86f7740dbe19f6c2",
+        "itemTplToClone": "59e3647686f774176a362507",
         "parentId": "57864a3d24597754843f8721",
         "handbookParentId": "5b47574386f77428ca22b2f1",
         "handbookPriceRoubles": 700000,
@@ -980,6 +980,47 @@
             "ExamineExperience": 100,
             "LootExperience": 100,
             "ItemSound": "food_bottle",
+            "BackgroundColor": "red"
+        }
+    },
+    "68c35c198b8b18c0c606ffa9": {
+        "newId": "68c35c198b8b18c0c606ffa9",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "57864a3d24597754843f8721",
+        "handbookParentId": "5b47574386f77428ca22b2f1",
+        "handbookPriceRoubles": 420000,
+        "fleaPriceRoubles": 420000,
+        "locales": {
+            "en": {
+                "name": "All-in-one Cleaner Robot",
+                "shortName": "Cleaner",
+                "description": "A smart all-in-one vacuum and mop robot designed for household cleaning."
+            },
+            "fr": {
+                "name": "Robot nettoyeur tout-en-un",
+                "shortName": "Nettoyeur",
+                "description": "Un robot intelligent d’aspiration et de lavage tout-en-un conçu pour le nettoyage domestique."
+            },
+            "ch": {
+                "name": "扫拖一体机器人",
+                "shortName": "扫拖机器人",
+                "description": "一款用于家庭清洁的智能扫拖一体机器人。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/cleaner_robot.bundle",
+                "rcid": ""
+            },
+            "Weight": 5.6,
+            "Width": 3,
+            "Height": 3,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "generic",
             "BackgroundColor": "red"
         }
     }

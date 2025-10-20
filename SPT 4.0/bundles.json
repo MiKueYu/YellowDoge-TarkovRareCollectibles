@@ -95,6 +95,10 @@
         {
             "key": "DeltaForce/champagne.bundle",
             "dependencyKeys": []
+        },
+        {
+            "key": "DeltaForce/cleaner_robot.bundle",
+            "dependencyKeys": []
         }
     ]
 }

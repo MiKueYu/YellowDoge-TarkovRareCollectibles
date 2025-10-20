@@ -1101,5 +1101,35 @@
             "SportBag": 0.004,
             "Jacket": 0.004
         }
+    },
+    "68c35c198b8b18c0c606ffa9": {
+        "interchange": {
+            "Jacket": 0.006,
+            "Drawer": 0.006,
+            "suitcase_plastic_lootable": 0.006,
+            "SportBag": 0.004
+        },
+        "shoreline": {
+            "suitcase_plastic_lootable": 0.01,
+            "Jacket": 0.006,
+            "Drawer": 0.006,
+            "SportBag": 0.006
+        },
+        "tarkovstreets": {
+            "suitcase_plastic_lootable": 0.01,
+            "Jacket": 0.006,
+            "Drawer": 0.006,
+            "SportBag": 0.006
+        },
+        "lighthouse": {
+            "suitcase_plastic_lootable": 0.01,
+            "Jacket": 0.006,
+            "Drawer": 0.006,
+            "SportBag": 0.006
+        },
+        "woods": {
+            "SportBag": 0.004,
+            "Jacket": 0.004
+        }
     }
 }
