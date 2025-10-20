@@ -900,5 +900,46 @@
             "ItemSound": "jewelry",
             "BackgroundColor": "red"
         }
+    },
+    "68c35c198b8b18c0c606ffa7": {
+        "newId": "68c35c198b8b18c0c606ffa7",
+        "itemTplToClone": "59faf7ca86f7740dbe19f6c2",
+        "parentId": "57864a3d24597754843f8721",
+        "handbookParentId": "5b47574386f77428ca22b2f1",
+        "handbookPriceRoubles": 500000,
+        "fleaPriceRoubles": 500000,
+        "locales": {
+            "en": {
+                "name": "Diamond Caviar",
+                "shortName": "Caviar",
+                "description": "“Diamond” caviar is famed for its rarity and use of top-grade sturgeon. More than a delicacy, it symbolizes status, often seen in elite restaurants and lavish events."
+            },
+            "fr": {
+                "name": "Caviar « Diamant »",
+                "shortName": "Caviar",
+                "description": "Le caviar « Diamant » est réputé pour sa rareté et son usage d’esturgeons de première qualité. Plus qu’un mets, il symbolise un statut, souvent présent dans les restaurants d’élite et les évènements luxueux."
+            },
+            "ch": {
+                "name": "“钻石”鱼子酱",
+                "shortName": "鱼子酱",
+                "description": "“钻石”鱼子酱因其产量稀少且仅使用顶级鲟鱼出产而闻名世间，它已不仅是一道美食，更是一种身份的象征，常出现在顶级餐厅和奢华场合。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/caviar.bundle",
+                "rcid": ""
+            },
+            "Weight": 0.1,
+            "Width": 1,
+            "Height": 1,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "food_bottle",
+            "BackgroundColor": "red"
+        }
     }
 }

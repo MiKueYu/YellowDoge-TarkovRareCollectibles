@@ -87,6 +87,10 @@
         {
             "key": "DeltaForce/card_zero.bundle",
             "dependencyKeys": []
+        },
+        {
+            "key": "DeltaForce/caviar.bundle",
+            "dependencyKeys": []
         }
     ]
 }
