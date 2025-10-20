@@ -1014,5 +1014,32 @@
             "barrel_cache": 0.002,
             "wood_cache": 0.002
         }
+    },
+    "68c35c198b8b18c0c606ffa6": {
+        "bigmap": {
+            "Jacket": 0.008,
+            "Drawer": 0.005
+        },
+        "shoreline": {
+            "Jacket": 0.006,
+            "Drawer": 0.005
+        },
+        "tarkovstreets": {
+            "Jacket": 0.01,
+            "Drawer": 0.008
+        },
+        "woods": {
+            "Jacket": 0.006,
+            "Drawer": 0.004
+        },
+        "interchange": {
+            "Jacket": 0.006,
+            "Drawer": 0.006,
+            "suitcase_plastic_lootable": 0.004
+        },
+        "lighthouse": {
+            "Jacket": 0.006,
+            "Drawer": 0.006
+        }
     }
 }
