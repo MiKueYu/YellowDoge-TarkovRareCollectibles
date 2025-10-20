@@ -91,6 +91,10 @@
         {
             "key": "DeltaForce/caviar.bundle",
             "dependencyKeys": []
+        },
+        {
+            "key": "DeltaForce/champagne.bundle",
+            "dependencyKeys": []
         }
     ]
 }

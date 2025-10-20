@@ -941,5 +941,46 @@
             "ItemSound": "food_bottle",
             "BackgroundColor": "red"
         }
+    },
+    "68c35c198b8b18c0c606ffa8": {
+        "newId": "68c35c198b8b18c0c606ffa8",
+        "itemTplToClone": "59faf7ca86f7740dbe19f6c2",
+        "parentId": "57864a3d24597754843f8721",
+        "handbookParentId": "5b47574386f77428ca22b2f1",
+        "handbookPriceRoubles": 700000,
+        "fleaPriceRoubles": 700000,
+        "locales": {
+            "en": {
+                "name": "Olivia Champagne",
+                "shortName": "Champagne",
+                "description": "A sparkling wine from France's Champagne region, renowned for its unique taste and bubbles, often served at celebrations and holidays."
+            },
+            "fr": {
+                "name": "Champagne Olivia",
+                "shortName": "Champagne",
+                "description": "Un vin effervescent de la région de Champagne en France, célèbre pour son goût unique et ses bulles, souvent servi lors des célébrations et des fêtes."
+            },
+            "ch": {
+                "name": "奥莉薇娅香槟",
+                "shortName": "香槟",
+                "description": "是一种产自法国香槟地区的气泡酒，以其独特的口感和气泡而闻名，常被用于庆祝重要场合和佳节。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/champagne.bundle",
+                "rcid": ""
+            },
+            "Weight": 0.8,
+            "Width": 1,
+            "Height": 2,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "food_bottle",
+            "BackgroundColor": "red"
+        }
     }
 }
