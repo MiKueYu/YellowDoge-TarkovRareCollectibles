@@ -1023,5 +1023,46 @@
             "ItemSound": "generic",
             "BackgroundColor": "red"
         }
+    },
+    "68c35c198b8b18c0c606ffaa": {
+        "newId": "68c35c198b8b18c0c606ffaa",
+        "itemTplToClone": "59e3647686f774176a362507",
+        "parentId": "57864a3d24597754843f8721",
+        "handbookParentId": "5b47574386f77428ca22b2f1",
+        "handbookPriceRoubles": 400000,
+        "fleaPriceRoubles": 400000,
+        "locales": {
+            "en": {
+                "name": "Saeed’s Pocket Watch",
+                "shortName": "PocketWatch",
+                "description": "A treasured pocket watch of the wandering hunter Saeed, rumored to hide the secrets of his past."
+            },
+            "fr": {
+                "name": "Montre de poche de Saeed",
+                "shortName": "Montre",
+                "description": "La montre de poche précieuse du chasseur errant Saeed, qui cacherait les secrets de son passé."
+            },
+            "ch": {
+                "name": "赛伊德的怀表",
+                "shortName": "怀表",
+                "description": "游荡猎人赛伊德的贴身怀表，听说里面有着他身世的秘密。"
+            }
+        },
+        "overrideProperties": {
+            "Prefab": {
+                "path": "DeltaForce/clock.bundle",
+                "rcid": ""
+            },
+            "Weight": 0.3,
+            "Width": 1,
+            "Height": 1,
+            "CanSellOnRagfair": false,
+            "ExaminedByDefault": false,
+            "ExamineTime": 1,
+            "ExamineExperience": 100,
+            "LootExperience": 100,
+            "ItemSound": "jewelry",
+            "BackgroundColor": "red"
+        }
     }
 }

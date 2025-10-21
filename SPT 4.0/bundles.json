@@ -99,6 +99,10 @@
         {
             "key": "DeltaForce/cleaner_robot.bundle",
             "dependencyKeys": []
+        },
+        {
+            "key": "DeltaForce/clock.bundle",
+            "dependencyKeys": []
         }
     ]
 }

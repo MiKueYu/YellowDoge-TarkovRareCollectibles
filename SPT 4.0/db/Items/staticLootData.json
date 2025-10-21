@@ -1131,5 +1131,74 @@
             "SportBag": 0.004,
             "Jacket": 0.004
         }
+    },
+    "68c35c198b8b18c0c606ffaa": {
+        "bigmap": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001
+        },
+        "factory4_day": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001
+        },
+        "factory4_night": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001
+        },
+        "interchange": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001,
+            "suitcase_plastic_lootable": 0.005
+        },
+        "laboratory": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001,
+            "suitcase_plastic_lootable": 0.005
+        },
+        "lighthouse": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001,
+            "suitcase_plastic_lootable": 0.005
+        },
+        "rezervbase": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001
+        },
+        "sandbox": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001,
+            "suitcase_plastic_lootable": 0.005
+        },
+        "sandbox_high": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001,
+            "suitcase_plastic_lootable": 0.005
+        },
+        "shoreline": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001,
+            "suitcase_plastic_lootable": 0.005
+        },
+        "tarkovstreets": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001,
+            "suitcase_plastic_lootable": 0.005
+        },
+        "woods": {
+            "Jacket": 0.0005,
+            "Drawer": 0.0005,
+            "SportBag": 0.0001
+        }
     }
 }
